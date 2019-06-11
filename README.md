@@ -1,2 +1,2 @@
 # sharix-base
-Universal sharing platform
+Sharix is universal sharing platform.
