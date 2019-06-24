@@ -12,12 +12,8 @@
     <include
             layout="@layout/app_bar_main"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:addStatesFromChildren="false" android:alwaysDrawnWithCache="false"
-            android:animateLayoutChanges="false" android:animationCache="false" android:background="#FFD700"
-            android:backgroundTint="#FFD700" android:backgroundTintMode="src_in" android:clickable="false"
-            android:clipChildren="false" android:contextClickable="false" android:hapticFeedbackEnabled="false"
-            android:splitMotionEvents="false" android:touchscreenBlocksFocus="false"/>
+            android:layout_height="match_parent"/>
+
     <android.support.design.widget.NavigationView
             android:id="@+id/nav_view"
             android:layout_width="match_parent"
@@ -25,7 +21,7 @@
             android:layout_gravity="start"
             android:fitsSystemWindows="true"
             app:headerLayout="@layout/nav_header_main"
-            app:menu="@menu/activity_main_drawer" android:visibility="invisible"
+            app:menu="@menu/activity_main_drawer" android:visibility="visible"
             app:itemTextColor="#000000" app:itemTextAppearance="@style/TextAppearance.AppCompat.Body2"
             android:background="#FFD700" android:backgroundTint="#F5E1BB" android:addStatesFromChildren="true">
     </android.support.design.widget.NavigationView>

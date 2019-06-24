@@ -4,22 +4,24 @@
       tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single" android:enabled="true" android:visible="true">
+
         <item
                 android:id="@+id/nav_home"
                 android:icon="@drawable/ic_import_contacts_black_24dp"
-                android:title="@string/menu_home" app:showAsAction="always"/>
+                android:title="@string/home"/>
         <item
-                android:id="@+id/nav_gallery"
+                android:id="@+id/nav_eql"
                 android:icon="@drawable/ic_desktop_windows_black_24dp"
-                android:title="@string/menu_gallery"/>
+                android:title="@string/equipment_list"/>
         <item
-                android:id="@+id/nav_slideshow"
+                android:id="@+id/nav_map"
                 android:icon="@drawable/ic_map_black_24dp"
-                android:title="@string/menu_slideshow"/>
+                android:title="@string/map"/>
         <item
-                android:id="@+id/nav_tools"
+                android:id="@+id/nav_timeL"
                 android:icon="@drawable/ic_view_comfy_black_24dp"
-                android:title="@string/menu_tools"/>
+                android:title="@string/timeline"/>
+
     </group>
 
 </menu>
