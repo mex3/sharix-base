@@ -71,19 +71,28 @@ public class MainActivity extends AppCompatActivity
 
 
         } else if (id == R.id.nav_eql) {
-            setTitle("Fragment Two");
+            setTitle("Equipment list");
             EqlFragment fragment = new EqlFragment();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.fram, fragment, "FragmentTwo");
-            fragmentTransaction.addToBackStack("FragmentTwo");
+            fragmentTransaction.replace(R.id.fram, fragment, "Equipment list");
+            fragmentTransaction.addToBackStack("Equipment list");
             fragmentTransaction.commit();
 
         } else if (id == R.id.nav_map) {
+            setTitle("Map");
+            MapFragment fragment = new MapFragment();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fram, fragment, "Map");
+            fragmentTransaction.addToBackStack("Map");
+            fragmentTransaction.commit();
 
         } else if (id == R.id.nav_timeL) {
-
-
-
+            setTitle("Timeline");
+            TimeFragment fragment = new TimeFragment();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fram, fragment, "Timeline");
+            fragmentTransaction.addToBackStack("Timeline");
+            fragmentTransaction.commit();
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
