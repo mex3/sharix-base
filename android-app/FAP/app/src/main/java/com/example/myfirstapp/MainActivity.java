@@ -15,8 +15,9 @@ import com.example.myfirstapp.Fragments.EqlFragment;
 import com.example.myfirstapp.Fragments.HomeFragment;
 import com.example.myfirstapp.Fragments.MapFragment;
 import com.example.myfirstapp.Fragments.TimeFragment;
+import com.example.myfirstapp.Menu.CreatorsActivity;
 import com.example.myfirstapp.Menu.ProfileActivity;
-
+import com.example.myfirstapp.Menu.SettingActivity;
 
 
 public class MainActivity extends AppCompatActivity
@@ -61,10 +62,19 @@ public class MainActivity extends AppCompatActivity
         switch (item.getItemId())
         {
             case R.id.action_profile:
-
                 Intent ProfileIntent = new Intent(MainActivity.this, ProfileActivity.class);
                 startActivity(ProfileIntent);
+                return false;
 
+
+            case R.id.action_settings:
+                Intent SettingIntent = new Intent(MainActivity.this, SettingActivity.class);
+                startActivity(SettingIntent);
+                return false;
+
+            case R.id.action_creators:
+                Intent CreatorsIntent = new Intent(MainActivity.this, CreatorsActivity.class);
+                startActivity(CreatorsIntent);
                 return false;
         }
 
