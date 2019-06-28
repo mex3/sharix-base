@@ -10,6 +10,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import com.example.myfirstapp.Fragments.EqlFragment;
+import com.example.myfirstapp.Fragments.HomeFragment;
+import com.example.myfirstapp.Fragments.MapFragment;
+import com.example.myfirstapp.Fragments.TimeFragment;
+
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -27,6 +33,7 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
@@ -68,6 +75,12 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
+            setTitle("ShariX");
+            HomeFragment fragment = new HomeFragment();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fram, fragment, "Home");
+            fragmentTransaction.addToBackStack("Home");
+            fragmentTransaction.commit();
 
 
         } else if (id == R.id.nav_eql) {
@@ -98,5 +111,6 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+
     }
 }

@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-      xmlns:app="http://schemas.android.com/apk/res-auto">
+      xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:anroid="http://schemas.android.com/tools"
+      android:background="#FFCEB3">
+
+
+    <item android:id="@+id/action_profile"
+          android:title="@string/action_profile"
+          android:orderInCategory="100"
+          app:showAsAction="never"
+    />
+
+
     <item android:id="@+id/action_settings"
           android:title="@string/action_settings"
-          android:orderInCategory="100"
+          android:orderInCategory="200"
+          app:showAsAction="never"/>
+
+
+    <item android:id="@+id/action_creators"
+          android:title="@string/action_creators"
+          android:orderInCategory="300"
           app:showAsAction="never"/>
 </menu>

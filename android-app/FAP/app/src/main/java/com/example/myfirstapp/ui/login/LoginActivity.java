@@ -145,7 +145,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         switch (v.getId()) {
             case R.id.button2:
                 Intent intent = new Intent(this, MainActivity.class);
-                startActivity(intent);x
+                startActivity(intent);
                 break;
             default:
                 break;

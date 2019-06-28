@@ -4,5 +4,31 @@
             xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
             app:startDestination="@id/navigation">
     <action android:id="@+id/action_nav_graph_pop" app:popUpTo="@id/nav_graph" app:popUpToInclusive="true"/>
+    <navigation android:id="@+id/navigation3" app:startDestination="@id/navigation2">
+        <navigation android:id="@+id/navigation2" app:startDestination="@id/loginActivity">
+            <activity android:id="@+id/loginActivity" android:name="com.example.myfirstapp.ui.login.LoginActivity"
+                          android:label="activity_login" tools:layout="@layout/activity_login"/>
+            <action android:id="@+id/action_global_mainActivity" app:destination="@id/navigation4"/>
+        </navigation>
+    </navigation>
+    <fragment android:id="@+id/eqlFragment" android:name="com.example.myfirstapp.Fragments.EqlFragment"
+              android:label="fragment_eql" tools:layout="@layout/fragment_eql"/>
+    <fragment android:id="@+id/mapFragment" android:name="com.example.myfirstapp.Fragments.MapFragment"
+              android:label="fragment_map" tools:layout="@layout/fragment_map"/>
+    <fragment android:id="@+id/timeFragment" android:name="com.example.myfirstapp.Fragments.TimeFragment"
+              android:label="fragment_time" tools:layout="@layout/fragment_time"/>
+    <navigation android:id="@+id/navigation4" app:startDestination="@id/mainActivity">
+        <activity android:id="@+id/mainActivity" android:name="com.example.myfirstapp.MainActivity"
+                      android:label="content_main" tools:layout="@layout/content_main"/>
+        <action android:id="@+id/action_global_eqlFragment" app:destination="@id/eqlFragment"/>
+        <action android:id="@+id/action_global_mapFragment" app:destination="@id/mapFragment"/>
+        <action android:id="@+id/action_global_timeFragment" app:destination="@id/timeFragment"/>
+    </navigation>
+    <fragment android:id="@+id/profileFragment" android:name="com.example.myfirstapp.Menu.ProfileFragment"
+              android:label="fragment_profile" tools:layout="@layout/fragment_profile"/>
+    <fragment android:id="@+id/creatorsFragment" android:name="com.example.myfirstapp.Menu.CreatorsFragment"
+              android:label="fragment_creators" tools:layout="@layout/fragment_creators"/>
+    <fragment android:id="@+id/settingFragment" android:name="com.example.myfirstapp.Menu.SettingFragment"
+              android:label="fragment_setting" tools:layout="@layout/fragment_setting"/>
 
 </navigation>
