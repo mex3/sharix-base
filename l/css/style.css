@@ -1,0 +1,1011 @@
+/* ================================= CSS Structure =================================
+1. GLOBAL STYLES	
+	- Fonts
+	- Main Styles
+	- Extra Classes
+		- Z Indexes
+		- Social Icon Hover Styles
+		- Title and Desc Styles
+		- Pointer Arrow Common Styles
+	- Button Styles
+
+2. HEADER SECTION	
+	- Triangle Background
+	- Logo & Menu
+		- Navigation
+	- Top Social Icon Styles
+	
+3. BANNER SECTION
+	- Left Banner Styles
+	- Right Banner Styles
+
+4. FEATURES SECTION
+5. REVIEWS SECTION
+6. SERVICES SECTION
+7. SCREENSHOT SECTION
+8. PRICING SECTION
+9. DEMO SECTION
+10. DOWNLOAD SECTION
+11. CONTACT US SECTION
+12. FOOTER SECTION
+=========================================================================== */
+
+/* =========================== GLOBAL STYLES ============================== */
+/* ------------- Fonts ------------- */
+@font-face {
+	font-family: "Flaticon";
+	src: url("../fonts/flaticon.eot");
+	src: url("../fonts/flaticon.eot#iefix") format("embedded-opentype"),
+	url("../fonts/flaticon.woff") format("woff"),
+	url("../fonts/flaticon.ttf") format("truetype"),
+	url("../fonts/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'latohairline';
+    src: url('../fonts/lato-hai-webfont.eot');
+    src: url('../fonts/lato-hai-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-hai-webfont.woff') format('woff'),
+         url('../fonts/lato-hai-webfont.ttf') format('truetype'),
+         url('../fonts/lato-hai-webfont.svg#latohairline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+    font-size: 20px;
+	font-style: normal;	
+}
+.flaticon-arrow351:before {
+	content: "\e000";
+}
+.flaticon-big44:before {
+	content: "\e001";
+}
+.flaticon-check13:before {
+	content: "\e002";
+}
+.flaticon-checkmark17:before {
+	content: "\e003";
+}
+.flaticon-open7:before {
+	content: "\e004";
+}
+.flaticon-phone71:before {
+	content: "\e005";
+}
+.flaticon-yield:before {
+	content: "\e006";
+}
+.glyph-item { 
+    line-height: 1;
+	display: inline-block;
+}
+/* ------------- Main Styles ------------- */
+body {
+	color: #bdc3c7;
+	font-size: 12px;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	-webkit-font-smoothing: antialiased !important;
+	background: url(../images/bg.png) top left repeat #fff;
+	overflow-x: hidden;	
+	margin: 0 auto;
+}
+a, a:hover, a:focus, .btn:focus{
+    text-decoration: none;
+	outline: none;
+}
+img, img.responsive {
+	max-width:100%;
+	width: auto \9 !important;
+}
+.relative {
+	position: relative;
+}
+.absolute {
+	position: absolute;
+}
+.static {
+	position: static;
+}
+.container {
+    max-width: 1200px;
+	width: 100%;
+}
+.no-padding {
+	padding: 0;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+.animated {
+	visibility:hidden;
+	animation-fill-mode: none;
+	-webkit-animation-fill-mode: none;
+	-moz-animation-fill-mode: none;
+	-o-animation-fill-mode: none;
+	-ms-animation-fill-mode: none;
+}
+.visible {
+	visibility:visible;
+}
+.btn:hover, .btn:focus {
+	background: #333;
+	color: #fff;
+}
+.btn {
+	display: inline-block;
+    -webkit-transition: all 500ms linear;
+    -moz-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    -ms-transition: all 500ms linear;
+    transition: all 500ms linear;
+}
+/* ------------- Extra Classes ------------- */
+.text-extrabold {
+	font-weight: 800;
+}
+.text-bold {
+	font-weight: 700;
+}
+.light-italic {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-style: italic;
+}
+.extrabold-italic {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	font-style: italic;
+}
+.bold-italic {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-style: italic;
+}
+.color-yellow {
+	color: #F1C40F;
+}
+.color-grey {
+	color: #7f8c8d;
+}
+.color-white {
+	color: #FFFFFF;
+}
+.pageloader { 
+	background: url(../images/loader.gif) center center no-repeat #fff;  
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;	
+}
+/* ------- Social Icon Hover Styles ------- */
+.gk-facebook:hover, .gk-facebook:focus, .gk-facebook:active {
+	background: #3B5999;
+	color: #fff;
+}
+.gk-twitter:hover, .gk-twitter:focus, .gk-twitter:active {
+	background: #00ACEE;
+	color: #fff;
+}
+/* ------- Title and Desc Styles ------- */
+.section-title {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 61px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	font-weight: 300;
+}
+.after-2000 .section-title, .after-2600 .section-title, .after-3000 .section-title {
+	font-size: 60px;
+}
+.section-msg {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 32px;
+	line-height: 1.4;
+	margin-top: 15px;
+}
+.section-msg1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 42px;
+}
+.gk-triangle-medium:before, .gk-triangle-medium:after {
+	font-size: 30px;
+}
+/* ------- Pointer Arrow Common Styles ------- */
+.gk-pointer-features {
+	position: absolute;
+}
+.gk-pointer-features.animated {
+	visibility: hidden;
+}
+.gk-pointer-features.visible {
+	visibility: visible;
+}
+/* ------------- Button Styles ------------- */
+.gk-btn {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 13px;
+	text-transform: uppercase;
+	padding: 13px 12px;
+	width: 159px;
+}
+.gk-btn .fa {
+	padding-right: 8px;
+}
+.gk-btn-margin {
+	margin-right: 30px;
+}
+.yellow-btn {
+	border-color: #F1C40F;
+	color: #F1C40F;
+}
+.yellow-btn:hover, .yellow-btn:active, .yellow-btn:focus {
+	background: #F1C40F;
+	color: #FFFFFF;
+}
+.green-btn:hover, .green-btn:active, .green-btn:focus {
+	background: #1abc9c;
+	color: #FFFFFF;
+}
+.green-btn {
+	border-color: #1abc9c;
+	color: #1abc9c;
+}
+/* =========================== HEADER SECTION ============================== */
+/* ------------- Section Background ------------- */
+.header-section {background-color:rgba(35, 42, 49, 0.9); }
+.features-section  { background-color:#ecf0f1; }
+.reviews-section { background-color:#ffffff; }
+.app-services-section { background-color:rgba(17, 155, 128, 0.9); }
+.app-screen-section { background-color:#ecf0f1; }
+.pricing-section { background-color:#ffffff; }
+.video-section { background-color:rgba(187, 52, 38, 0.9);}
+.download-section { background-color:#ecf0f1; }
+.contact-section { background-color:rgba(236, 191, 10, 0.9); }
+
+.section-padding {
+	padding: 100px 0;
+}
+/* ------------- Banner  ------------- */
+.banner-bg {	
+	min-height: 480px;
+	position: relative;
+	top: -70px;	
+	margin: 0 auto;
+}
+.banner-bg .section-padding { 
+	margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* ------------- Logo & Menu ------------- */
+.logo-container {
+	background: rgba(27,38,51,0.9);
+	color: #fff;
+	padding: 16px 0 13px;
+}
+.sticky-navigation {
+	width: 100%;
+	z-index: 9999;	
+	position: relative;
+}
+/* -------- Navigation --------- */
+.top-navbar {
+	margin: 0;
+	min-height: inherit;
+}
+.top-navbar ul.nav a {	
+	font-size: 13px;
+	font-weight: 800;	
+	color: #F1C40F;
+}
+.top-navbar ul.nav a:hover, .top-navbar ul.nav a:focus, .top-navbar ul.nav a:active, .top-navbar ul.nav li.active a {
+	background:none !important;
+	color: #1abc9c;
+}
+.navbar-toggle {
+	background-color: #F1C40F;
+	margin-top:-40px;
+	margin-right:0px;
+}
+.navbar-toggle .icon-bar {
+	background-color:#FFFFFF;
+}
+.navbar-nav {
+	margin: 0;
+}
+.navbar-nav li {
+	margin-right: 20px;
+}
+.after-2000 .navbar-nav li, .after-2600 .navbar-nav li {
+	margin-right: 12px;
+}
+.navbar-nav li a{
+	padding-bottom:7px;
+	padding-top:7px;
+}
+.top-navbar .dropdown a{
+	background:none !important;
+}
+/* ------------- Top Social Icon Styles ------------- */
+.top-social-icon {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: right;
+}
+.top-social-icon li {
+	float: left;	
+}
+.top-social-icon li a {
+	background: #fff;
+	border-radius: 100%;	
+	font-size: 12px;	
+	display: block;
+	width: 18px;
+	height: 18px;
+	color: #1b2633;
+	margin: 7px 26px 0 0;	
+}
+.top-social-icon li .fa {
+	width: 18px;
+	height: 18px;
+	display: block;
+	line-height: 18px;
+	text-align: center;
+}
+.top-social-icon li:last-child a {
+	margin-right: 0;
+}
+/* =========================== BANNER SECTION ============================== */
+/* ------------- Left Banner Styles ------------- */
+.left-banner-text {
+	margin-top: 60px;
+	padding-top: 50px;
+	color: #FFFFFF;
+}
+.after-1500 .left-banner-text {
+	margin-top: 30px;
+}
+.after-1500 .right-banner-image {
+	margin-top: 20px;
+}
+.left-banner-text h1 {
+	font-size: 53px;
+	margin-bottom: 30px;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+}
+.banner-text {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 17px;
+	padding: 0 30px 0 0;
+	color: #7f8c8d;
+}
+.banner-button {
+	padding: 32px 45px 0 0;
+}
+.triangle-shape {
+	padding: 45px 0 0;
+}
+.flaticon.gk-triangle-bigsharp:before, .flaticon.gk-triangle-bigsharp:after {
+	font-size: 36px;
+	font-weight: bold;
+}
+.banner-section {
+	padding-top: 70px;
+	position: relative;
+	z-index: 10;
+}
+.banner-triangle:hover, .banner-triangle:active, .banner-triangle:focus {
+	color: #FFFFFF;	
+}
+.banner-triangle:hover {
+	opacity: 0.6;
+	transition: all 0.4s ease-in 0s;
+	-moz-transition: all 0.4s ease-in 0s;
+	-webkit-transition: all 0.4s ease-in 0s;
+	-o-transition: all 0.4s ease-in 0s;
+	-ms-transition: all 0.4s ease-in 0s;
+}
+.banner-left-margin {
+	margin-left: 45px;
+	margin-bottom: 12px;
+}
+/* ------------- Right Banner Styles ------------- */
+.right-banner-image {
+	padding-top: 10px;
+	margin-top: 50px;
+}
+.banner-image-info {
+	margin-top: 410px;
+}
+.banner-info {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+	color: #bdc3c7;
+	padding-right: 5px;
+}
+.banner-info .text-bold {
+	font-size: 32px;
+	display: block;
+	color: #7f8c8d;
+}
+.close-brackets {
+	font-family: 'latohairline';
+	color: #dee1e4;
+	font-size: 86px;
+}
+.banner-image-info .fa {
+	font-size: 32px;
+	vertical-align: top;
+	line-height: 80px;
+	margin-top: 20px;
+	padding-left: 15px;
+	width: 40px;
+}
+.banner-info-right {
+	margin-top: -30px;
+}
+/* =========================== FEATURES SECTION ============================== */
+.features-left-info {
+	padding: 120px 0 0 15px;
+}
+.gk-list {
+    display: inline-block;
+    width: 100%;
+	padding-top: 5px;
+}
+.gk-list li {
+	font-size: 17px;
+	clear: both;
+	float: left;
+	display: inline-block;
+	border-bottom: 1px solid #bdc3c7;
+	padding: 5px 12px 5px 0;
+}
+.gk-list li .fa {
+	display: inline;
+	font-size: 15px;	
+}
+.gk-list li .simple-icon {
+	font-size: 14px;
+	padding-right: 4px;
+	text-shadow: 0 0 0;
+}
+.gk-list li.no-border {
+	border: none;
+}
+.features-right-grid {
+	padding-top: 30px;
+	padding-left: 40px;
+}
+.text-right .features-grid {
+	padding: 0 30px 10px 30px;
+}
+.features-grid {
+	padding: 0 40px 10px 0;	
+}
+.features-grid .fa, .features-grid .simple-icon {
+	font-size: 26px;
+	padding-bottom: 10px;
+}
+.grid-title {
+	font-size: 21px;
+}
+.features-line {
+	border-color: #bdc3c7;
+	width: 78%;
+}
+.features-right-grid .text-right .features-line {	
+	margin-left: 20px;
+	margin-right: 20px;
+	float: right;
+}
+.features-right-grid .features-line {
+	margin-right: 20px;
+	margin-left: -10px;
+	float: left;
+}
+.gk-divider {
+	border-right: 1px solid #bdc3c7;
+}
+.ipad-shot-wrapper {
+	margin-top: -130px;	
+	margin-left: -25px;
+}
+.features-right-info {
+	position: static;
+	padding-left: 120px;	
+}
+.gk-pointer-features.gk-right-arrow {	
+	left: 15%;
+	top: 6%;
+}
+/* =========================== REVIEWS SECTION ============================== */
+
+.reviews-slider-section {
+	padding: 90px 0 0;
+}
+.reviews-info {
+	text-align: center;
+	padding: 0 70px 0 30px;
+}
+.reviews-msg {
+	font-size: 17px;
+	margin-bottom: 40px;
+	line-height: 1.6;
+}
+.reviews-msg:before {
+	content: "\e004";	
+	font-family: Flaticon;
+	color: #F1C40F;
+	font-size: 26px;
+}
+.reviews-image img {
+	float: right;
+	max-width: 310px;
+	margin: 30px 30px 0 0;
+}
+.reviews-author:before {
+	content: "";	
+	width: 100%;
+	height: 100%;
+	border: 1px solid #7f8c8d;
+	border-radius: 50%;
+	padding: 0 7px;
+	font-size: 10px;
+}
+.reviews-author {
+	font-size: 21px;
+}
+.reviews-author .author-sub {
+	font-size: 17px;
+}
+.author-margin {
+	margin: 45px 0 0;
+}
+.info-margin {
+	margin: 35px 0 0;
+}
+.reviews-indicators {
+	position: absolute;
+	bottom: 0;
+	right: 14%;
+}
+.reviews-indicators .fa {
+	font-size: 26px;
+}
+.reviews-indicators .fa:hover {
+	opacity: 0.7;
+}
+.main-reviews-image {
+    padding-bottom: 90px;
+}
+.gk-pointer-features.gk-left-arrow {
+    right: 25%;
+    top: 10%;
+}
+.gk-slide-left, .gk-slide-right {
+	padding: 0 10px;
+}
+/* =========================== SERVICES SECTION ============================== */
+.awesome-container {
+	padding-top: 100px;
+	max-width: 1320px;
+}
+.awesome-services {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #35c8ab;
+    border-radius: 12px;	
+	max-width: 312px;
+	margin: 0 auto;
+	padding: 40px 35px;
+}
+.awesome-services .simple-icon {
+    font-size: 32px;
+    padding-bottom: 30px;
+	display: block;
+}
+.awesome-services h3 {
+	font-size: 21px;
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+.awesome-services .big-text {
+	font-size: 17px;
+	line-height: 27px;
+	margin-bottom: 18px;
+}
+.gk-app-left-down-arrow {
+    left: 31%;
+    top: 84%;
+}
+/* =========================== SCREENSHOT SECTION ============================== */
+.app-section-padding {
+	padding: 140px 0 20px;
+}
+.app-left-info {
+	padding-top: 70px;
+}
+.gk-pointer-features.gk-app-right-arrow {
+	top: 25%;
+	left: 19.5%;
+}
+.owl-controls {
+	text-align: right;
+	padding: 20px 20px 0 0;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.owl-controls .owl-buttons div {
+	display: inline-block;
+}
+.owl-controls .owl-buttons .fa {
+	padding: 0 10px;
+	font-size: 26px;
+}
+.owl-controls .owl-buttons .fa:hover {
+	opacity: 0.7;
+}
+.owl-controls .owl-buttons  .owl-prev {
+    left:  0;
+	top:50%;
+    position: absolute;
+}
+.owl-controls .owl-buttons  .owl-next {
+    position: absolute;
+    right: 0;
+	top:50%;
+}
+.app-carousel-slider {
+	padding: 15px 0 0;
+}
+.screen-item img {
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-o-border-radius: 12px;
+	-ms-border-radius: 12px;
+	margin: 0 auto;
+}
+.app-container {
+	max-width: 1320px;
+}
+/* =========================== PRICING SECTION =========================== */
+.pricing-section.app-section-padding {
+	padding-top: 120px;
+}
+.gk-pricing-arrow {
+    left: 24%;
+    top: 75%;
+}
+.pricing-container {
+	max-width: 1320px;
+	padding-top: 90px;
+}
+.pricing-box {
+	max-width: 315px;
+	margin: 0 auto;
+}
+.pricing-title {
+	background: none repeat scroll 0 0 #1a2836;
+    border-radius: 10px 10px 0 0;
+    padding: 20px 0;
+}
+.pricing-title h3 {
+	font-size: 21px;
+}
+.pricing-box .symbol { 
+	font-size: 21px;
+	vertical-align: top;
+	line-height: 50px;
+	padding-right: 8px;
+}
+.pricing-box .price h6 { 
+	font-size: 90px;
+	line-height: 90px;
+	padding-left: 20px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+.price .per-month { 
+	font-size: 17px;
+	line-height: 20px;
+}
+.pricing-box ul {
+	background: none repeat scroll 0 0 #fff;
+    border: 1px solid #8ea8c1;
+    border-radius: 0 0 10px 10px;
+    padding: 40px;
+	width: 100%;
+}
+.pricing-box ul li {
+	line-height: 24px;
+}
+.pricing-box.black-price .pricing-title {
+	background: none repeat scroll 0 0 #1a2836;
+	}
+.pricing-box.black-price ul {
+	border: 1px solid #1a2836;
+	}
+.pricing-box.red-price .pricing-title {
+	background: none repeat scroll 0 0 #bb3426;
+	}
+.pricing-box.red-price ul {
+	border: 1px solid #bb3426;
+	}
+.pricing-box.green-price .pricing-title {
+	background: none repeat scroll 0 0 #119b80;
+	}
+.pricing-box.green-price ul {
+	border: 1px solid #119b80;
+	}
+/* =========================== DEMO SECTION ============================== */
+.video-bg{
+	background:url(../images/video-bg.png) center center no-repeat;
+	background-size: cover;
+    padding-top:60px;
+	padding-bottom: 60px;	
+	position: relative;
+    height: 510px;
+	margin-top: 70px;
+	border: 2px solid rgba(0,0,0,0.5);
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-o-border-radius: 6px;
+	-ms-border-radius: 6px;
+}
+#video_container {
+	height: 510px;
+}
+.mb_YTVPBar .ytpicon { 
+	border-width: 12px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	font-size: 90px;
+	line-height: 105px;
+}
+.mb_YTVPBar span{  
+    height: 128px;    
+    width: 128px;
+}
+.gk-pointer-features.gk-down-arrow {
+	top: 64%;
+	right: 20%;
+}
+/* =========================== DOWNLOAD SECTION ============================== */
+
+.download-right-info {
+	padding: 0 0 30px;
+}
+.download-button {
+    margin: 25% 0 15%;
+    padding-top: 30px;
+    text-align: center;
+}
+.gk-download-btn {
+	font-family: 'Open Sans',sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 12px 16px;
+    text-transform: uppercase;
+    width: auto;
+}
+.gk-download-btn .fa {
+	padding-right: 10px;
+	font-size: 17px;
+}
+.gk-download-pointer.gk-up-right-arrow {
+	top: 100%;
+	left: 50%;
+}
+.download-section .gk-input-submit.submit {
+    padding-top: 20px;
+}
+.subscribe-form {
+	padding-top: 20px;	
+}
+.subscribe-form .form-group.gk-email {
+	max-width: 415px;
+	margin: 0 auto;
+}
+.has-error .help-block {
+	margin: 0;
+}
+.download-section .gk-contact-form .form-control { 
+	border-bottom: 1px solid #7f8c8d;
+	color: #7f8c8d;
+	}
+.download-section .gk-contact-form .form-control::-moz-placeholder {
+	color:#7f8c8d;
+}
+.download-section .gk-contact-form .form-control:-ms-input-placeholder {
+	color:#7f8c8d;
+}
+.download-section .gk-contact-form .form-control::-webkit-input-placeholder {
+	color:#7f8c8d;
+}
+.download-section .gk-submit {
+	border: 1px solid #7f8c8d;
+	color: #7f8c8d;
+}
+.download-section .gk-submit:hover {	
+	color:#fff;
+	background:#7f8c8d;
+	}
+/* =========================== CONTACT US SECTION ============================== */
+.gk-contact-form {
+	padding-top: 40px;
+}
+
+.gk-contact-form .form-control {
+	background: none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	-o-box-shadow: none;
+	-ms-box-shadow: none;	
+	resize: none;
+	border: none;
+	border-bottom: 1px solid #fff;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-o-border-radius: 0px;
+	-ms-border-radius: 0px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 17px;
+	padding-left: 0;
+}
+.gk-contact-form .form-control::-moz-placeholder {
+	color:#fff;
+	text-transform: uppercase;
+}
+.gk-contact-form .form-control:-ms-input-placeholder {
+	color:#fff;
+	text-transform: uppercase;
+}
+.gk-contact-form .form-control::-webkit-input-placeholder {
+	color:#fff;
+	text-transform: uppercase;
+}
+.gk-contact-form .form-group {
+	margin-bottom: 30px;
+}
+.gk-textarea-message .form-control {
+	background-image: -webkit-linear-gradient(left, transparent 10px, transparent 10px), -webkit-linear-gradient(right, transparent 10px, transparent 10px), -webkit-linear-gradient(transparent 60px, #fff 60px, #fff 61px, transparent 61px);
+    background-image: -moz-linear-gradient(left, transparent 10px, transparent 10px), -moz-linear-gradient(right, transparent 10px, transparent 10px), -moz-linear-gradient(transparent 60px, #fff 60px, #fff 61px, transparent 61px);
+    background-image: -ms-linear-gradient(left, transparent 10px, transparent 10px), -ms-linear-gradient(right, transparent 10px, transparent 10px), -ms-linear-gradient(transparent 60px, #fff 60px, #fff 61px, transparent 61px);
+    background-image: -o-linear-gradient(left, transparent 10px, transparent 10px), -o-linear-gradient(right, transparent 10px, transparent 10px), -o-linear-gradient(transparent 60px, #fff 60px, #fff 61px, transparent 61px);
+    background-image: linear-gradient(left, transparent 10px, transparent 10px), linear-gradient(right, transparent 10px, transparent 10px), linear-gradient(transparent 60px, #fff 60px, #fff 61px, transparent 61px);
+    background-size: 100% 100%, 100% 100%, 100% 61px;
+	line-height: 61px;
+	border: none;	
+}
+.gk-submit {
+	background: none;
+	border: 1px solid #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 12px 40px;
+}
+.contact-section .gk-submit:hover { 
+	background-color : #fff; 
+	color:#CDC81E;
+	}
+.gk-contact-form .has-error .form-control {
+	border-color: #a94442;
+}
+.gk-contact-form .has-error .form-control:focus, .gk-contact-form .has-success .form-control:focus {
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	-o-box-shadow: none;
+	-ms-box-shadow: none;
+}
+.gk-contact-form .has-success .form-control:focus {
+	border-color: #fff;
+}
+.gk-textarea-message .form-control-feedback {
+	line-height: 61px;
+	height: 61px;
+}
+.has-error .gk-textarea-message .form-control {
+	background-image: -webkit-linear-gradient(left, transparent 10px, transparent 10px), -webkit-linear-gradient(right, transparent 10px, transparent 10px), -webkit-linear-gradient(transparent 60px, #a94442 60px, #a94442 61px, transparent 61px);
+    background-image: -moz-linear-gradient(left, transparent 10px, transparent 10px), -moz-linear-gradient(right, transparent 10px, transparent 10px), -moz-linear-gradient(transparent 60px, #a94442 60px, #a94442 61px, transparent 61px);
+    background-image: -ms-linear-gradient(left, transparent 10px, transparent 10px), -ms-linear-gradient(right, transparent 10px, transparent 10px), -ms-linear-gradient(transparent 60px, #a94442 60px, #a94442 61px, transparent 61px);
+    background-image: -o-linear-gradient(left, transparent 10px, transparent 10px), -o-linear-gradient(right, transparent 10px, transparent 10px), -o-linear-gradient(transparent 60px, #a94442 60px, #a94442 61px, transparent 61px);
+    background-image: linear-gradient(left, transparent 10px, transparent 10px), linear-gradient(right, transparent 10px, transparent 10px), linear-gradient(transparent 60px, #a94442 60px, #a94442 61px, transparent 61px);    
+}
+.gk-form-message {
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 15px;
+	font-weight: 700;
+	padding-top: 10px;
+	display: none;
+}
+.gk-form-message-subscribe {
+	color: #fff;
+}
+.gk-form-message .glyphicon {
+	padding-right: 8px;
+}
+.gk-contact-pointer {
+	padding: 170px 0 0;
+	margin-left: -70px;
+}
+.gk-contact-pointer img {
+	margin: 0 auto;
+}
+.gk-contact-form {
+    padding-top: 120px;
+}
+.contact-info {
+	padding-top: 140px;
+	font-size: 17px;
+}
+.contact-row {
+	margin-bottom: 15px;
+}
+.contact-row p {
+	margin-bottom: 5px;
+}
+.contact-info .simple-icon {
+	font-size: 20px;
+	text-shadow: 0 0 0;
+}
+/* =========================== FOOTER SECTION ============================== */
+.footer-bg {
+	background: #1a2531;
+	color: #7f8c8d;
+	padding: 10px 0;
+}
+.footer-bg p {
+	margin: 0;
+}
+.footer-social-icon {
+	display: inline-block;
+	margin: 0 0 0 20px;
+}
+.footer-social-icon a {
+	background: #F1C40F;
+	border-radius: 100%;	
+	font-size: 12px;	
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	color: #1a2531;
+	margin: 0 3px;	
+}
+.footer-social-icon .fa {
+	width: 18px;
+	height: 18px;	
+	display: block;
+	line-height: 18px;
+}

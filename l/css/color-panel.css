@@ -1,0 +1,74 @@
+#theme-panel {
+    position: fixed;
+    width: 215px;
+    height: auto;
+    top: 150px;
+    min-height: 200px;
+    text-align: left;
+    background: white;
+    border: 1px solid #CCC;
+    z-index: 999;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.close-theme-panel {
+    left: -215px;
+}
+.open-theme-panel {
+    left: -1px;
+}
+#theme-panel .segment {
+    width: 100%;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 18px 12px;
+}
+#theme-panel .segment h4{
+	font-family: 'Armata', sans-serif;
+	font-size:15px;
+	font-weight:700;
+}
+#theme-panel a.panel-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: white;
+    color: #000000;
+    right: -50px;
+    top: 24px;
+    text-align: center;
+    font-size: 23px;
+    line-height: 47px;
+    cursor: pointer;
+    border: 1px solid #CCC;
+	border-left:hidden;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#theme-panel h3 {
+    margin: 3px auto 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#theme-panel .segment a.switcher {
+	border: 2px solid #cccccc;
+    cursor: pointer;
+    display: inline-block;
+    height: 60px;
+    margin: 5px 0 0 1px;
+    width: 60px;
+}
+.color1-bg {
+	background-color:#2C3E50;   
+}
+.color2-bg {
+    background-color:#CDC81E;   
+}
+.color3-bg {
+	background-color:#CE294C;   
+}
+.color4-bg {
+    background: url(../images/color-panel/color4.jpg) no-repeat;
+}

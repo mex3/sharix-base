@@ -1,0 +1,782 @@
+/* ================================= Responsive CSS ================================= */
+
+/* ---------- MAX 1199px ---------- */
+@media only screen and (max-width:1199px) {
+	/* ------- Navigation ------- */
+	.navbar-nav li {
+    	margin-right: 6px;
+	}
+}
+
+/* ---------- MAX 1024px ---------- */
+@media only screen and (max-width:1024px) and (min-width:980px) {
+	/* ------- Wrapper Div ------- */
+	.wrapper-class {
+		width: 100%;
+	}
+	/* ------- Triangle Background ------- */
+	.triangle-bg:before {
+		border-width: 460px;
+	}	
+	/* ------- Banner Styles ------- */
+	.left-banner-text {
+		margin-top: 30px;
+		padding-top: 30px;
+	}
+	.banner-text {
+		padding: 0;
+	}
+	.banner-button {
+    	padding: 30px 70px 0 0;
+	}
+	.banner-image-info {
+    	margin-top: 300px;
+	}
+	/* ------- Button Styles ------- */
+	.gk-btn {
+    	width: auto;
+	}
+	.gk-btn-margin {		
+		margin-right: 20px;
+	}	
+	/* ------- Triangle Shape ------- */
+	.triangle-shape {
+		padding-top: 30px;
+	}
+	/* ------- Navigation ------- */
+	.navbar-nav li {
+		margin-right: 0;
+	}
+	/* ------- Features ------- */
+	.features-section {
+		padding: 40px 0 10px;
+	}
+	.gk-pointer-features.gk-right-arrow {
+		left: 13%;		
+		top: 5%;
+	}
+	.features-left-info {
+		padding-top: 90px;
+	}
+	.features-right-info {
+		padding-left: 40px;
+	}	
+	.ipad-shot-wrapper img {
+    	max-width: 48%;
+	}
+	/* ------- Reviews ------- */
+	.reviews-slider-section {
+		padding-top: 20px;
+	}
+	.gk-pointer-features.gk-left-arrow {
+		right: 25%;
+		top: -15%;
+	}
+	.reviews-info {
+		padding: 0 20px;
+	}
+	.reviews-msg {
+		margin-bottom: 20px;
+	}
+	.author-margin, .info-margin {
+		margin-top: 20px;	
+	}
+	.reviews-image img {
+		max-width: 250px;
+	}
+	.reviews-indicators {
+		right: 23%;
+	}
+	.gk-reviews-big-circle {
+		left: 5%;
+		top: 60%;
+	}
+	.gk-reviews-small-circle {
+		top: 70%;
+		left: 80%;
+	}
+	/* ------- Screenshot ------- */
+	.app-left-info {
+		padding-top: 40px;
+	}
+	.gk-pointer-features.gk-app-right-arrow {
+		left: 14%;
+		top: 10%;
+	}
+	.screen-item img {
+		max-width: 70%;
+	}	
+	.owl-controls {
+		padding-top: 10px;
+	}
+	.owl-controls .owl-buttons .fa {
+		color: #000000;
+	}	
+	/* ------- Services ------- */
+	.awesome-container {
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+	.awesome-services {
+		padding: 20px 25px;	
+	}
+	.gk-app-left-down-arrow {
+		top: 55%;
+		left: 24%;	
+	}
+	/* ------- Pricing ------- */
+	.pricing-section.app-section-padding {
+		padding-top: 30px;
+	}	
+	.gk-pricing-arrow {
+		left: 21%;
+		top: 58%;
+	}
+	.pricing-container {
+		padding-top: 15px;
+	}
+	.pricing-box ul {
+		padding: 30px 25px;
+	}
+	/* ------- Demo ------- */
+	.video-bg{		
+		height: 350px;
+		margin: 5px auto 0;
+		max-width: 70%;
+	}
+	#video_container {
+		height: 370px;		
+	}
+	.mb_YTVPBar .buttonBar{ 
+		top: -250px;
+	}	
+	.gk-pointer-features.gk-down-arrow {		
+		top: 50%;
+		right: 32%;
+	}
+	/* ------- Download ------- */
+	.download-button {
+		padding-top: 10px;
+		margin:10% 0;
+	}
+	.download-section .gk-download-pointer {
+		top: 80%;
+		left: 60%;
+	}
+	.subscribe.gk-contact-form, .subscribe-form {
+		padding: 0;
+	}
+	.download-section .gk-input-submit.submit {
+		padding-top: 10px;
+	}
+	/* ------- Contact us ------- */
+	.gk-contact-form {
+		padding-top: 20px;
+	}
+	.gk-contact-pointer {
+		margin-left: -25%;
+	}
+	.contact-info {
+		padding-top: 60px;
+	}	
+	.contact-section {
+		overflow: hidden;
+	}	
+}
+
+/* ---------- MAX 1000px ---------- */
+@media only screen and (max-width:1000px) {
+	/* ------- Shape Section ------- */
+	.shape-section {
+		max-width: none;
+		width: 100%;
+	}
+	/* ------- Wrapper Div ------- */
+	.wrapper-class {
+		width: 100%;
+	}
+	/* ------- Features ------- */
+	.ipad-shot-wrapper {
+		margin-top: -200px;
+	}
+	.text-right .features-grid {
+		padding: 0 20px 10px;
+	}
+	.features-grid {
+		padding: 0 30px 10px 0;
+	}	
+}
+
+/* ---------- MAX 980px ---------- */
+@media only screen and (max-width:980px) {	
+	/* ------- Shape section ------- */
+	.gk-dd-shape:after {		
+		left: -5%;
+		top: 995px;
+	}
+	.gk-dd-shape {
+		height: 1280px;
+	}
+	/* ------- Features ------- */
+	.features-right-info {
+    	padding-left: 20px;
+	}
+	.features-right-grid {
+		padding-left: 20px;
+	}
+	.ipad-shot-wrapper {
+		margin-top: -110px;
+	}
+	/* ------- Title ------- */
+	.section-msg {
+		font-size: 30px;
+	}
+	/* ------- Screenshot ------- */
+	.screen-item {
+    	padding: 20px;
+	}
+	.screen-item img {
+		max-width: 76%;
+	}
+	/* ------- Reviews ------- */
+	.reviews-info {
+		padding: 0 15px;
+	}
+	.gk-reviews-big-circle {
+		left: 0;
+	}
+}
+
+/* ---------- MAX 979px ---------- */
+@media only screen and (max-width:979px) {
+	/* ------- Color Styles ------- */
+	body,
+	.color-grey{
+		color:#555;
+	}	
+	.section-padding {
+		padding: 125px 0 40px;
+	}
+	/* ------- Triangle Background ------- */
+	.header-section {
+		overflow: hidden;
+		padding-bottom: 30px;
+	}
+	#header .triangle-shape.banner-nav {
+		margin-left: 0;
+		text-align: center;
+		width: 100%;
+	}
+	/* ------- Banner Styles ------- */
+	.banner-image-info {
+		margin-top: 120px;
+	}
+	.banner-section {
+	    padding-top: 100px;
+	}
+	.banner-left-margin {
+		margin-bottom: 110px;
+		margin-left: 0;
+	}
+	.banner-button {
+		padding-right: 0;
+		text-align: center;
+	}
+	.left-banner-text {
+		margin-top: 0;
+		padding-top: 30px;		
+		position: static;
+	}
+	.left-banner-text h1 {
+		text-align: center;
+	}
+	.banner-text {
+		padding: 0;
+	}	
+	.right-banner-image {
+		margin-top: 0;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.banner-section {
+		position: relative;
+		padding-bottom: 50px;
+	}	
+	.triangle-shape {
+		position: absolute;
+		bottom: 25px;
+		z-index: 9999;
+	}
+	.banner-triangle {
+    	display: block;
+	}
+	.banner-info-right {
+		padding-left: 20px;
+	}
+	/* ------- Button Styles ------- */
+	.gk-btn {
+		padding: 10px 12px;
+		width: auto;
+	}	
+	.yellow-white-color .yellow-btn {
+		border-color: #FFFFFF;
+		color: #FFFFFF;
+	}
+	.yellow-white-color .yellow-btn:hover {
+		background: #FFFFFF;
+		color: #333333;
+	}
+	/* ------- Logo & Menu ------- */
+	.logo img {
+		margin: 0 auto;
+	}
+	.top-navbar .navbar-right {
+		float: none !important;
+		text-align: center;
+		margin-top: 10px;
+	}
+	.top-navbar .navbar-right li {
+		float: none;
+		display: inline-block;
+		text-align: center;
+	}
+	/* ------- Top Social Icon ------- */
+	.top-social-icon {
+		float: none;
+		text-align: center;
+	}
+	.top-social-icon li {
+    	display: inline-block;
+		float: none;   
+	}
+	/* ------- Features ------- */
+	.features-left-info {
+		padding: 0 15px 20px;
+		text-align: center;
+	}	
+	.features-right-info {
+		position: relative;		
+		padding: 90px 15px 0;
+	}
+	.gk-pointer-features.gk-right-arrow {
+		left: 45%;
+		top: 0;
+		transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+	}
+	.ipad-shot-wrapper {		
+		margin: 0;
+		z-index: 1;
+	}
+	.ipad-shot-wrapper img {
+    	text-align: center;
+		display: block;
+		margin: 0 auto;
+	}
+	.features-right-grid {
+		padding: 30px 0 15px;
+	}
+	.text-right .features-grid {
+    	padding: 0 30px 10px 10px;
+	}	
+	.features-grid {
+		padding: 0 10px 10px 0;
+	}
+	.gk-list {
+		width: auto;
+	}
+	.gk-list li {
+		display: block;
+		float: none;
+	}
+	/* ------- Description ------- */
+	.section-msg1 {
+		text-align: center;
+	}
+	.section-msg1 span br {
+    	display: none;
+	}	
+	/* ------- Reviews ------- */
+	.reviews-image img {
+		float: none;
+		margin: 30px auto 0;
+		display: block;
+	}
+
+	.reviews-slider-section {
+		padding-top: 40px;
+	}
+	.gk-reviews-circle-container {
+		max-width: 500px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.gk-reviews-big-circle {
+		position: static;
+	}
+	.gk-reviews-small-circle {
+		top: 20%;
+		right: 0;
+		left: auto;
+	}
+	.gk-pointer-features.gk-left-arrow {
+		right: 45%;		
+		transform: rotate(-120deg);
+		-moz-transform: rotate(-120deg);
+		-webkit-transform: rotate(-120deg);
+		-o-transform: rotate(-120deg);
+		-ms-transform: rotate(-120deg);
+		top: 70%;
+	}
+	.app-reviews {
+		padding-bottom: 20px;
+	}
+	.reviews-indicators {
+		position: relative;
+		right: 0;
+		left: 0;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	/* ------- Services ------- */	
+	.gk-app-left-down-arrow {		
+		left: 0;
+		right: 0;		
+		top: 100%;
+	}
+	.gk-app-left-down-arrow img {
+		margin: 0 auto;
+	}	
+	.awesome-container {
+		padding-top: 80px;
+	}
+	.awesome-services {
+		max-width: 98%;
+	}
+	/* ------- Screenshot ------- */		
+	.app-left-info {
+		padding-top: 10px;
+		text-align: center;
+	}
+	.gk-pointer-features.gk-left-arrow {
+		right: 65%;
+		top: 38%;
+		transform: rotate(-120deg);
+	}
+	.screen-item img {
+    	max-width: 100%;
+	}
+	.owl-controls .owl-buttons .owl-next {
+		right: -15px;
+	}
+	.owl-controls .owl-buttons .owl-prev {
+		left: -15px !important;
+	}
+	/* ------- Pricing ------- */
+	.pricing-section .app-right-info {
+		padding-top: 30px;
+	}
+	.grey-white-color .pricing-section .app-right-info .color-grey {
+		color: #fff;
+	}	
+	.gk-pricing-arrow {
+		display: block;
+		left: 0;
+		right: 0;
+		top: 100%;		
+	}
+	.gk-pricing-arrow img {
+		margin: 0 auto;	
+	}
+	.pricing-box ul {
+		padding: 30px 15px;
+	}	
+	/* ------- Video ------- */
+	.video-bg {
+		margin-top: 80px;
+	}	
+	.pull-right {
+		float: none !important;
+	}
+
+	/* ------- Download ------- */	
+	.download-left-img {
+		margin-top: 0;
+	}
+	.download-left-img img {
+		margin: 0 auto;
+	}
+	.download-button {
+		margin: 0;
+	}
+	.subscribe-form {
+		padding:40px 15px 0;
+	}
+	.gk-contact-form .subscribe-form .form-control {
+		border-bottom: 1px solid #555;
+		color: #555;
+	}
+	.gk-contact-form .subscribe-form .form-control::-moz-placeholder {
+		color:#555;		
+	}
+	.gk-contact-form .subscribe-form .form-control:-ms-input-placeholder {
+		color:#555;		
+	}
+	.gk-contact-form .subscribe-form .form-control::-webkit-input-placeholder {
+		color:#555;		
+	}
+	.subscribe-form .gk-submit{
+		border: 1px solid #555;
+		color: #555;
+	}
+	.subscribe-form .gk-submit:hover {
+		background: #333;
+		color: #fff;
+	}
+	/* ------- Contact Us ------- */
+	.grey-yellow-color .contact-section .color-grey {
+		color:#fff;
+	}	
+	.contact-section .animated.fadeInRight.visible {
+		text-align: center;
+	}
+	.gk-contact-form .form-control{
+		border-bottom: 1px solid #fff;
+		color: #fff;
+	}
+	.gk-contact-form .form-control::-moz-placeholder {
+		color:#fff;		
+	}
+	.gk-contact-form .form-control:-ms-input-placeholder {
+		color:#fff;		
+	}
+	.gk-contact-form .form-control::-webkit-input-placeholder {
+		color:#fff;		
+	}
+	.gk-textarea-message .form-control {
+		background-image: -webkit-linear-gradient(left, transparent 10px, transparent 10px), -webkit-linear-gradient(right, transparent 10px, transparent 10px), -webkit-linear-gradient(transparent 60px, #fff 60px, #fff 61px, transparent 61px);
+		background-image: -moz-linear-gradient(left, transparent 10px, transparent 10px), -moz-linear-gradient(right, transparent 10px, transparent 10px), -moz-linear-gradient(transparent 60px, #fff 60px, #fff 61px, transparent 61px);
+		background-image: -ms-linear-gradient(left, transparent 10px, transparent 10px), -ms-linear-gradient(right, transparent 10px, transparent 10px), -ms-linear-gradient(transparent 60px, #fff 60px, #fff 61px, transparent 61px);
+		background-image: -o-linear-gradient(left, transparent 10px, transparent 10px), -o-linear-gradient(right, transparent 10px, transparent 10px), -o-linear-gradient(transparent 60px, #fff 60px, #fff 61px, transparent 61px);
+		background-image: linear-gradient(left, transparent 10px, transparent 10px), linear-gradient(right, transparent 10px, transparent 10px), linear-gradient(transparent 60px, #fff 60px, #fff 61px, transparent 61px);
+		border-bottom: none;
+	}
+	.gk-submit {
+		border: 1px solid #fff;
+		color: #fff;
+	}
+	.gk-submit:hover {
+		background: #fff;
+		color: #555;
+	}
+	.gk-input-submit{
+		text-align:center;
+	}
+	.gk-contact-pointer {
+		padding-top: 80px;
+		margin-left: 0;
+	}
+	.contact-info {
+		padding-top: 50px;
+	}	
+	/* ------- Disable Animations ------- */
+	.animated {
+		visibility: visible !important;
+	  	-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	.gk-pointer-features.animated {
+		visibility: visible;
+	}
+}
+
+/* ---------- MAX 767px ---------- */
+@media only screen and (max-width:767px) {
+	/* ------- Banner Section ------- */	
+	.right-banner-image {
+		margin-top: 20px;
+	}
+	.banner-left-margin, .banner-image-info {
+		margin: 0;
+	}
+	.right-banner-image img.pull-right {
+		float: none !important;		
+		margin: 0 auto;		
+	}
+	/* ------- Logo & Menu ------- */	
+	.logo img {
+		margin: 0;
+	}
+	.navbar-collapse {
+		border: none;
+		box-shadow: none;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		-o-box-shadow: none;
+		-ms-box-shadow: none;
+	}
+	.top-navbar {
+		padding-right: 15px;
+	}
+	.top-navbar .navbar-right {		
+		text-align: left;
+	}
+	.top-navbar .navbar-right li {
+		display: block;
+		float: none;
+		text-align: left;
+	}
+	/* ------- Features ------- */	
+	.features-right-grid .text-right {
+		text-align: left;
+	}
+	.features-grid.gk-divider {
+		border: none;
+	}	
+	.features-right-grid .features-line {
+		display: none;
+	}
+	.features-right-grid .features-grid {
+		padding: 0;
+		text-align: center;	
+		margin: 0 0 20px;	
+	}
+	.features-grid .fa {
+		font-size: 40px;
+	}
+	.grid-title {
+    	font-size: 30px;
+	}	
+	/* ------- Pricing ------- */		
+	.pricing-box {
+		max-width: 96%;
+		margin-bottom: 15px;
+	}
+}
+
+/* ---------- MAX 640px ---------- */
+@media only screen and (max-width:640px) {
+
+	/* -------Section ------- */
+	.section-padding {
+		padding-top: 100px;
+	}
+	/* ------- Reviews ------- */
+	.reviews-section .gk-pointer-features {
+		left: 0;
+		margin: 0 auto;
+		position: relative;
+		right: 0;
+		text-align: center;
+	}
+	.reviews-section .gk-pointer-features img {
+		margin: 0 auto;
+	}
+	.app-reviews {
+		padding-bottom: 20px;
+	}
+	.reviews-info {
+		padding: 0 10px;
+	}
+	.main-reviews-image {
+		padding-bottom: 50px;
+	}
+	/* ------- Screenshot ------- */
+	.gk-pointer-features.gk-app-right-arrow {
+		left: 40%;
+		top: 34%;
+	}
+	/* ------- Pricing ------- */
+	.pricing-section.app-section-padding {
+		padding-top: 60px;
+	}
+}
+
+/* ---------- MAX 480px ---------- */
+@media only screen and (max-width:480px) {
+	/* ------- Shape Section ------- */
+	.gk-dd-shape:after {
+		top: 56%;
+	}
+	/* ------- Title ------- */
+	.section-title {
+		font-size: 55px;
+	}
+	/* ------- Features ------- */
+	.gk-pointer-features.gk-right-arrow {
+		left: 35%;		
+	}
+	.features-section {
+		padding-bottom: 60px;
+	}
+	/* ------- Reviews ------- */
+	.gk-pointer-features.gk-left-arrow {
+		top: 78%;	
+		right: 35%;
+	}	
+	.main-reviews-image {
+		padding-bottom: 20px;
+	}
+	.gk-reviews-big-circle, .gk-reviews-small-circle {
+		position: static;
+		margin: 20px auto;
+	}
+	/* ------- Contact ------- */
+	.gk-contact-pointer {
+		padding-top: 60px;		
+	}
+}
+
+/* ---------- MAX 360px ---------- */
+@media only screen and (max-width:360px) {
+	/* ------- Shape Section ------- */		
+	.gk-dd-shape:after {		
+		margin: 0 -320px;			
+	}
+	/* ------- Reviews ------- */
+	.reviews-image img {
+		max-width: 260px;
+	}
+	/* ------- Button Styles ------- */
+	.gk-btn-margin {
+		margin-right: 15px;
+	}
+	.gk-download-btn {
+		margin: 0 15px 15px auto;
+	}
+	.download-button {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	/* ------- Screenshot ------- */
+	.gk-pointer-features.gk-app-right-arrow {
+		left: 28%;
+		top: 29%;
+	}	
+	/* ------- Title ------- */
+	.section-title {
+		word-wrap: break-word;
+	}
+	/* ------- Contact Us ------- */
+	.gk-contact-form {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+/* ---------- MAX 320px ---------- */
+@media only screen and (max-width:320px) {
+	/* ------- Shape Section ------- */
+	.gk-dd-shape:before {
+		margin: -27px -310px 0;
+	}
+	.gk-dd-shape:after {
+		margin: 0 -325px;
+	}
+}
