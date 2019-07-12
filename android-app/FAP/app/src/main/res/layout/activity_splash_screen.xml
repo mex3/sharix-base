@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
               android:orientation="vertical" android:layout_width="fill_parent"
-              android:layout_height="fill_parent">
+              android:layout_height="fill_parent"
+              android:background="@color/colorAccent">
 
-    <ImageView android:id="@+id/splashscreen" android:layout_width="wrap_content"
-               android:layout_height="fill_parent"
+    <ImageView android:id="@+id/splashscreen" android:layout_width="314dp"
+               android:layout_height="543dp"
                android:src="@drawable/sharix_logo"
                android:layout_gravity="center" android:contentDescription="@string/todo"/>
+
+
+    <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/loading2"/>
 
 
 </LinearLayout>

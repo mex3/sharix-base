@@ -34,6 +34,7 @@
     <string name="text_creators">Creators</string>
     <string name="text_choose_d">Choose a date</string>
     <string name="text_news">News</string>
+    <string name="text_creators_n1"></string>
     <string name="title_activity_profile">Your profile</string>
     <string name="title_activity_setting">Setting</string>
     <string name="title_activity_creators">Creators</string>
@@ -41,6 +42,7 @@
 
     //Bug fix
     <string name="todo">TODO</string>
+
     //------------------------------------
 
 

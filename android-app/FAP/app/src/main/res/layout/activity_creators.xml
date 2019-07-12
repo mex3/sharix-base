@@ -7,11 +7,19 @@
         android:layout_height="match_parent"
         tools:context=".Menu.CreatorsActivity"
         android:background="@color/colorAccent">
+    <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="846dp"
+            android:src="@drawable/creators"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="8dp"
+            android:background="@color/colorAccent"/>
 
     <android.support.design.widget.AppBarLayout
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:theme="@style/AppTheme.AppBarOverlay">
+
 
         <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
