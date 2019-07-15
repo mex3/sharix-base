@@ -35,10 +35,10 @@
 		}
 		
 		private function isUserExist($username, $email){
-        $stmt = $this->con->prepare("SELECT id FROM users WHERE username = ? OR email = ?");
-        $stmt->bind_param("ss", $username, $email);
-        $stmt->execute(); 
-        $stmt->store_result(); 
-        return $stmt->num_rows > 0; 
+			$stmt = $this->con->prepare("SELECT id FROM users WHERE username = ? OR email = ?");
+			$stmt->bind_param("ss", $username, $email);
+			$stmt->execute(); 
+			$stmt->store_result(); 
+			return $stmt->num_rows > 0; 
         }
 	}
