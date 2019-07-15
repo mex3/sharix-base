@@ -35,7 +35,7 @@
 		}
 		
 		private function isUserExist($username, $email){
-			$stmt = $this->con->prepare("SELECT id FROM users WHERE Username = ? OR Email = ?");
+			$stmt = $this->con->prepare("SELECT id FROM signup WHERE Username = ? OR Email = ?");
 			$stmt->bind_param("ss", $username, $email);
 			$stmt->execute(); 
 			$stmt->store_result(); 
