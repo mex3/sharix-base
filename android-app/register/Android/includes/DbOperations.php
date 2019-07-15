@@ -1,4 +1,4 @@
-<?php
+<?php  
 
 	class DbOperations{
 
@@ -11,15 +11,17 @@
 			$db = new DbConnect();
 
 			$this->con = $db->connect();
+			
 
 		}
 
 		/*CRUD -> C -> CREATE */
 
-		public function createUser($username, $pass, $email){
+		public function createUser($id, $username, $pass, $email){
 				$password = md5($pass);
-				$stmt = $this->con->prepare("INSERT INTO `user` (`id`, `username`, `password`, `email`) VALUES (NULL, ?, ?, ?);");
-				$stmt->bind_param("sss",$username,$password,$email);
+				$id = time();
+				$stmt = $this->con->prepare("INSERT INTO `signup` (`id`, `Username`, `Password`, `Email`) VALUES (?, ?, ?, ?);");
+				$stmt->bind_param("ssss",$id,$username,$password,$email);
 
 				if($stmt->execute()){
 					return 1;
@@ -28,3 +30,4 @@
 				}
 			}
 	}
+
