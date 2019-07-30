@@ -20,8 +20,8 @@
 <div id="header">
 	<div id="menu" class="container">
 		<ul>
-			<li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
-			<li><a href="#featured" accesskey="3" title="">About Us</a></li>
+			<li class="current_page_item"><a href="login.php" accesskey="1" title="">Login</a></li>
+			<li><a href="#about" accesskey="3" title="">About Us</a></li>
 			<li><a href="#contacts" accesskey="5" title="">Contact Us</a></li>
 		</ul>
 	</div>
@@ -29,10 +29,18 @@
 <div id="page-wrapper">
 <div id="page" class="container">
 	<div id="content">
-			<!--<h2>Welcome to project Sharixs</h2>-->
-			<img src="i,g/sharix-logo.png">
+			<!--<h2>Welcome to project ShariX</h2>-->
+		<p>Join our project today as a user or as a company!</p>
+			<img src="images/logo-sharix.png" height=150px width=150px>
+
+<div id="menu">		
+<ul>
+			<li class="current_page_item"><a href="register.php" accesskey="6" title="Join as USER">Join as USER</a></li>
+			<li class="current_page_item"><a href="register-place.php" accesskey="7" title="Join as Company">Join as COMPANY</a></li>
+		</ul>
+</div>
 		</div>
-		<p> ShariX is an <strong> open-sourse platform, </strong> that could be used for creating and populating services based on shar principles. </p>
+		<p> ShariX is an <strong> open-source platform, </strong> that could be used for creating and populating services based on sharing principles. </p>
 		<p>Our implimentation helps people do:
 <ul>
 <li>what they love</li>
@@ -41,10 +49,10 @@
 <li>what's needed</li>
 </ul>
 		</p>
-		<p>Join our project today as a user or as a company!</p>
-		<p>BUTTON1	BUTTON2</p>
 </div>
 </div>
+</div>
+<section id="about">
 <div id="featured-wrapper">
 	<div id="featured" class="container">
 		<div class="major">
@@ -54,21 +62,59 @@
 		<div class="column1">
 			<div class="title">
 				<h2>Founder</h2>
+					<h3>Alexandra Panyukova</h3>
+			<img src="images/logo-sharix.png" height=150px width=150px>
 			</div>
 		</div>
 		<div class="column2">
 			<div class="title">
-				<h2>Development Team</h2>
+				<h2>Back-end</h2>
+					<h3>Sergey Kuvashov</h3>
+			<img src="images/logo-sharix.png" height=150px width=150px>
 			</div>
 		</div>
 		<div class="column3">
 			<div class="title">
-				<h2>Marketing Team</h2>
+				<h2>Front-end</h2>
+					<h3>Andrey Matveenko</h3>
+			<img src="images/logo-sharix.png" height=150px width=150px>
 			</div>
 		</div>
  			<div class="title">
-				<h2>Operations Team</h2>
+				<h2>Marketing</h2>
+					<h3>Nikita Makov</h3>
+			<img src="images/logo-sharix.png" height=150px width=150px>
 			</div>
+		</div>
+
 		</div>
 	</div>
 </div>
+</section>
+<section id="contacts">
+<div id="page-wrapper">
+<div id="page" class="container">
+<div class="major">
+                        <h2> Contact us </h2>
+
+            	<form id="contact_form" method="post" action="form/contact.php">
+                        <div class="form-row">
+                          <input type="text" class="form-control" id="name" name="name" placeholder="Name" />
+                        </div>
+                        <div class="form-row">
+                          <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" />
+                        </div>
+                        <div class="form-row">
+                          <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                        </div>
+                        <div class="form-row">
+                          <textarea cols="60" rows="3" id="comment" name="comment" class="form-control" placeholder="Your message..."></textarea>
+                        </div>
+                        <div class="form-row">
+                          <input type="submit" value="Написать" class="btn btn-dark btn-lg" id="submit" name="submit" />
+                        </div>
+                </form>
+</div>
+</div>
+</div>
+</section>
