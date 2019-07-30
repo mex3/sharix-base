@@ -51,6 +51,9 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="rating_text">Rating</string>
+    <string name="e_mail">E-mail</string>
+    <string name="type_of_activity">Type of activity</string>
 
 
 </resources>

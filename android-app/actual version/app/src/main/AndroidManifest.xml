@@ -3,6 +3,9 @@
           xmlns:tools="http://schemas.android.com/tools"
           package="com.example.myfirstapp">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -11,7 +14,20 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".LogAndReg.RegActivity">
+        </activity>
+        <activity
+                android:name=".LogAndReg.LoginAct"
+                android:label="Register"
+                android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
 
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".LogAndReg.RegisterActivity">
+        </activity>
         <activity android:name=".Menu.ProfileCoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -19,7 +35,6 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-
         <activity android:name=".Menu.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

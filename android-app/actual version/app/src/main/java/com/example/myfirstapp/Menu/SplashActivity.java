@@ -3,13 +3,14 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import com.example.myfirstapp.LogAndReg.LoginAct;
+import com.example.myfirstapp.LogAndReg.RegActivity;
 import com.example.myfirstapp.R;
-import com.example.myfirstapp.ui.login.LoginActivity;
 
 public class SplashActivity extends Activity {
 
     /** Duration of wait **/
-    private final int SPLASH_DISPLAY_LENGTH = 5000;
+    private final int SPLASH_DISPLAY_LENGTH = 1000;
 
     /** Called when the activity is first created. */
     @Override
@@ -23,7 +24,7 @@ public class SplashActivity extends Activity {
             @Override
             public void run() {
                 /* Create an Intent that will start the Menu-Activity. */
-                Intent mainIntent = new Intent(SplashActivity.this, LoginActivity.class);
+                Intent mainIntent = new Intent(SplashActivity.this, LoginAct.class);
                 SplashActivity.this.startActivity(mainIntent);
                 SplashActivity.this.finish();
             }
