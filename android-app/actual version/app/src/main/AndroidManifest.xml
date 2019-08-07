@@ -14,7 +14,8 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".LogAndReg.RegActivity">
+        <activity android:name=".LogAndReg.RegActivity"
+                  android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
                 android:name=".LogAndReg.LoginAct"
@@ -26,7 +27,9 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:name=".LogAndReg.RegisterActivity">
+        <activity android:name=".LogAndReg.RegisterActivity"
+                  android:theme="@style/AppTheme.NoActionBar">
+
         </activity>
         <activity android:name=".Menu.ProfileCoActivity">
             <intent-filter>
@@ -70,15 +73,6 @@
                     android:value="com.example.myfirstapp.MainActivity"/>
         </activity>
         <activity
-                android:name=".ui.login.LoginActivity"
-                android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
-        <activity
                 android:name=".MainActivity"
                 android:label="@string/app_name"
                 android:theme="@style/AppTheme.NoActionBar">
@@ -88,6 +82,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
     </application>
 
 </manifest>

@@ -46,7 +46,7 @@ public class LoginAct extends AppCompatActivity implements View.OnClickListener 
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
         editTextUsername = (EditText) findViewById(R.id.editTextUsername);
 
-        textViewLogin = (TextView) findViewById(R. id. textViewLogin);
+        textViewLogin = (TextView) findViewById(R.id.textViewLogin);
 
         buttonRegister = (Button) findViewById(R.id.buttonRegister);
 
