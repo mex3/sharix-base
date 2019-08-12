@@ -11,7 +11,7 @@
 <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
 
 <!--[if IE 6]><link href="css/default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
-    
+
 </head>
 <body>
 <div id="logo">
@@ -20,9 +20,9 @@
 <div id="header">
 	<div id="menu" class="container">
 		<ul>
-			<li class="current_page_item"><a href="login.php" accesskey="1" title="">Login</a></li>
 			<li><a href="#about" accesskey="3" title="">About Us</a></li>
 			<li><a href="#contacts" accesskey="5" title="">Contact Us</a></li>
+      <li><a href="#contacts" accesskey="7" title="">Join</a></li>
 		</ul>
 	</div>
 </div>
@@ -33,7 +33,7 @@
 		<p>Join our project today as a user or as a company!</p>
 			<img src="images/logo-sharix.png" height=150px width=150px>
 
-<div id="menu">		
+<div id="menu">
 <ul>
 			<li class="current_page_item"><a href="register.php" accesskey="6" title="Join as USER">Join as USER</a></li>
 			<li class="current_page_item"><a href="register-place.php" accesskey="7" title="Join as Company">Join as COMPANY</a></li>
@@ -114,6 +114,67 @@
                           <input type="submit" value="Написать" class="btn btn-dark btn-lg" id="submit" name="submit" />
                         </div>
                 </form>
+</div>
+</div>
+</div>
+</section>
+<section id="Join user">
+  <div id="page-wrapper">
+  <div id="page" class="container">
+  <div class="major">
+    <h1> Join user </h1>
+    <form id="contact_form" method="post" action="form/registerUser.php">
+              <div class="form-row">
+                <div class="form-row">
+                  <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" />
+                </div>
+                <div class="form-row">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                </div>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name" />
+              </div>
+              <div class="form-row">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Password" />
+              </div>
+              <div class="form-row">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Repet Password" />
+              </div
+              <div class="form-row">
+                <input type="submit" value="Зарегистрироваться" class="btn btn-dark btn-lg" id="submit" name="submit" />
+              </div>
+      </form>
+</div>
+</div>
+</div>
+</section>
+
+<section id="Join compani">
+  <div id="page-wrapper">
+  <div id="page" class="container">
+  <div class="major">
+    <h1> Join company </h1>
+    <form id="contact_form" method="post" action="form/registerUser.php">
+              <div class="form-row">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name" />
+              </div>
+              <div class="form-row">
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" />
+              </div>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                <div class="form-row">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Password" />
+                </div>
+                <div class="form-row">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Repet Password" />
+                </div
+              </div>
+              <div class="form-row">
+                <textarea cols="60" rows="3" id="comment" name="comment" class="form-control" placeholder="company description"></textarea>
+              <div>
+                <textarea cols="60" rows="3" id="comment" name="comment" class="form-control" placeholder="company address"></textarea>
+              </div>
+                <input type="submit" value="Зарегестрировать" class="btn btn-dark btn-lg" id="submit" name="submit" />
+      </form>
 </div>
 </div>
 </div>
