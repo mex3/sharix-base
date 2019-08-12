@@ -22,7 +22,7 @@
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
+    <string name="welcome">Welcome to ShariX</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
@@ -40,7 +40,7 @@
     <string name="text_creators">Creators</string>
     <string name="text_choose_d">Choose a date</string>
     <string name="text_news">News</string>
-    <string name="text_creators_n1"></string>
+    <string name="text_create_acc">Create Account</string>
     <string name="title_activity_profile">Your profile</string>
     <string name="title_activity_setting">Setting</string>
     <string name="title_activity_creators">Creators</string>
@@ -51,6 +51,17 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="rating_text">Rating</string>
+    <string name="e_mail">E-mail</string>
+    <string name="type_of_activity">Type of activity</string>
+    <string name="username">Username</string>
+    <string name="email">email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="already_registered_nclick_her_to_login">Already registered? Click her to login</string>
+    <string name="register_user">Register User</string>
+    <string name="enter_email">Enter email</string>
+    <string name="password">password</string>
+    <string name="enter_username">Enter username</string>
 
 
 </resources>

@@ -138,7 +138,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/D:/Android/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_home_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/D:/Android/plugins/android/lib/android.jar!/images/material_design_icons/navigation/ic_menu_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -148,7 +148,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_home_black_24dp" />
+                            <entry key="outputName" value="ic_menu_black_24dp" />
                             <entry key="sourceFile" value="C:\Users\SugarFish" />
                           </map>
                         </option>

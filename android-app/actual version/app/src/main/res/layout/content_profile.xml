@@ -11,8 +11,8 @@
         android:background="@color/colorAccent">
 
     <ImageView
-            android:layout_width="198dp"
-            android:layout_height="211dp" tools:srcCompat="@tools:sample/avatars[3]"
+            android:layout_width="119dp"
+            android:layout_height="151dp" tools:srcCompat="@tools:sample/avatars[3]"
             android:id="@+id/imageView2" android:layout_marginTop="8dp"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -29,44 +29,47 @@
             android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.769"
-            app:layout_constraintVertical_bias="0.055"/>
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.41"
+            app:layout_constraintVertical_bias="0.014" android:typeface="normal" android:textAllCaps="false"
+    />
+    <ImageView
+            android:layout_width="261dp"
+            android:layout_height="28dp" app:srcCompat="@drawable/line"
+            android:id="@+id/imageView3"
+            android:contentDescription="@string/todo"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" app:layout_constraintStart_toEndOf="@+id/imageView2"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.0"/>
     <TextView
-            android:text="@string/text_s_name"
+            android:text="@string/rating_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView8" android:textSize="18sp" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.83"
-            app:layout_constraintVertical_bias="0.111"/>
+            android:id="@+id/textView3"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" app:layout_constraintStart_toEndOf="@+id/imageView2"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.007"/>
     <TextView
-            android:text="@string/text_number"
+            android:text="@string/e_mail"
+            android:layout_width="160dp"
+            android:layout_height="26dp"
+            android:textSize="18sp"
+            android:id="@+id/textView4" android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <TextView
+            android:text="@string/type_of_activity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView11" android:textSize="18sp"
-            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="8dp"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.725"
-            app:layout_constraintVertical_bias="0.28"/>
-    <TextView
-            android:text="@string/text_task_list"
+            android:textSize="18sp"
+            android:id="@+id/textView6" android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <Button
+            android:text="Button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView12" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="16dp" app:layout_constraintVertical_bias="0.064" android:textSize="18sp"/>
-    <MultiAutoCompleteTextView
-            android:text="MultiAutoCompleteTextView"
-            android:layout_width="275dp"
-            android:layout_height="143dp"
-            android:id="@+id/multiAutoCompleteTextView"
-            tools:ignore="MissingConstraints" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.066" app:layout_constraintVertical_bias="0.554"/>
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="408dp"
+            tools:layout_editor_absoluteX="76dp" android:id="@+id/button3"/>
 </android.support.constraint.ConstraintLayout>
