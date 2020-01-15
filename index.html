@@ -1,181 +1,373 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+    <!-- BEGIN HEAD -->
+    <head>
+        <meta charset="utf-8"/>
+        <title>ShariX</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="Sharix-Developers Web-site" name="description"/>
+        <meta content="DexMP, Sharix" name="author"/>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
-<link href="css/default.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+        <!-- GLOBAL MANDATORY STYLES -->
+        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+        <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css"/>
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 
-<!--[if IE 6]><link href="css/default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+        <!-- PAGE LEVEL PLUGIN STYLES -->
+        <link href="css/animate.css" rel="stylesheet">
 
-</head>
-<body>
-<div id="logo">
-	<h1><span>Sharix</span></a></h1>
-</div>
-<div id="header">
-	<div id="menu" class="container">
-		<ul>
-			<li><a href="#about" accesskey="3" title="">About Us</a></li>
-			<li><a href="#contacts" accesskey="5" title="">Contact Us</a></li>
-      <li><a href="#contacts" accesskey="7" title="">Join</a></li>
-		</ul>
-	</div>
-</div>
-<div id="page-wrapper">
-<div id="page" class="container">
-	<div id="content">
-			<!--<h2>Welcome to project ShariX</h2>-->
-		<p>Join our project today as a user or as a company!</p>
-			<img src="images/logo-sharix.png" height=150px width=150px>
+        <!-- THEME STYLES -->
+        <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
 
-<div id="menu">
-<ul>
-			<li class="current_page_item"><a href="register.php" accesskey="6" title="Join as USER">Join as USER</a></li>
-			<li class="current_page_item"><a href="register-place.php" accesskey="7" title="Join as Company">Join as COMPANY</a></li>
-		</ul>
-</div>
-		</div>
-		<p> ShariX is an <strong> open-source platform, </strong> that could be used for creating and populating services based on sharing principles. </p>
-		<p>Our implimentation helps people do:
-<ul>
-<li>what they love</li>
-<li>what they are good in</li>
-<li>what they are paid for</li>
-<li>what's needed</li>
-</ul>
-		</p>
-</div>
-</div>
-</div>
-<section id="about">
-<div id="featured-wrapper">
-	<div id="featured" class="container">
-		<div class="major">
-			<h2> Our team </h2>
-			<span class="byline">We're looking for people to join us</span>
-		</div>
-		<div class="column1">
-			<div class="title">
-				<h2>Founder</h2>
-					<h3>Alexandra Panyukova</h3>
-			<img src="images/logo-sharix.png" height=150px width=150px>
-			</div>
-		</div>
-		<div class="column2">
-			<div class="title">
-				<h2>Back-end</h2>
-					<h3>Sergey Kuvashov</h3>
-			<img src="images/logo-sharix.png" height=150px width=150px>
-			</div>
-		</div>
-		<div class="column3">
-			<div class="title">
-				<h2>Front-end</h2>
-					<h3>Andrey Matveenko</h3>
-			<img src="images/logo-sharix.png" height=150px width=150px>
-			</div>
-		</div>
- 			<div class="title">
-				<h2>Marketing</h2>
-					<h3>Nikita Makov</h3>
-			<img src="images/logo-sharix.png" height=150px width=150px>
-			</div>
-		</div>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="favicon.ico"/>
+    </head>
+    <!-- END HEAD -->
 
-		</div>
-	</div>
-</div>
-</section>
-<section id="contacts">
-<div id="page-wrapper">
-<div id="page" class="container">
-<div class="major">
-                        <h2> Contact us </h2>
+    <!-- BODY -->
+    <body id="body" data-spy="scroll" data-target=".header">
 
-            	<form id="contact_form" method="post" action="form/contact.php">
-                        <div class="form-row">
-                          <input type="text" class="form-control" id="name" name="name" placeholder="Name" />
+        <!--========== HEADER ==========-->
+        <header class="header navbar-fixed-top">
+            <!-- Navbar -->
+            <nav class="navbar" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="menu-container js_nav-item">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="toggle-icon"></span>
+                        </button>
+
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a class="logo-wrap" href="#body">
+                                <img class="logo-img logo-img-main" src="img/logo.png" alt="Asentus Logo">
+                                <img class="logo-img logo-img-active" src="img/logo-dark.png" alt="Asentus Logo">
+                            </a>
                         </div>
-                        <div class="form-row">
-                          <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" />
+                        <!-- End Logo -->
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse nav-collapse">
+                        <div class="menu-container">
+                            <ul class="nav navbar-nav navbar-nav-right">
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Главная</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">О нас</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#team">Команда</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Работы</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#experience">Технологии</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Контакты</a></li>
+                            </ul>
                         </div>
-                        <div class="form-row">
-                          <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
-                        </div>
-                        <div class="form-row">
-                          <textarea cols="60" rows="3" id="comment" name="comment" class="form-control" placeholder="Your message..."></textarea>
-                        </div>
-                        <div class="form-row">
-                          <input type="submit" value="Написать" class="btn btn-dark btn-lg" id="submit" name="submit" />
-                        </div>
-                </form>
-</div>
-</div>
-</div>
-</section>
-<section id="Join user">
-  <div id="page-wrapper">
-  <div id="page" class="container">
-  <div class="major">
-    <h1> Join user </h1>
-    <form id="contact_form" method="post" action="form/registerUser.php">
-              <div class="form-row">
-                <div class="form-row">
-                  <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" />
+                    </div>
+                    <!-- End Navbar Collapse -->
                 </div>
-                <div class="form-row">
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
-                </div>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Name" />
-              </div>
-              <div class="form-row">
-                <input type="text" class="form-control" id="name" name="name" placeholder="Password" />
-              </div>
-              <div class="form-row">
-                <input type="text" class="form-control" id="name" name="name" placeholder="Repet Password" />
-              </div
-              <div class="form-row">
-                <input type="submit" value="Зарегистрироваться" class="btn btn-dark btn-lg" id="submit" name="submit" />
-              </div>
-      </form>
-</div>
-</div>
-</div>
-</section>
+            </nav>
+            <!-- Navbar -->
+        </header>
+        <!--========== END HEADER ==========-->
 
-<section id="Join compani">
-  <div id="page-wrapper">
-  <div id="page" class="container">
-  <div class="major">
-    <h1> Join company </h1>
-    <form id="contact_form" method="post" action="form/registerUser.php">
-              <div class="form-row">
-                <input type="text" class="form-control" id="name" name="name" placeholder="Name" />
-              </div>
-              <div class="form-row">
-                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" />
-              </div>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
-                <div class="form-row">
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Password" />
+        <!--========== SLIDER ==========-->
+        <div class="promo-block parallax-window" data-parallax="scroll" data-image-src="img/1920x1080/01.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="promo-block-divider">
+                            <h1 class="promo-block-title">ShariX</h1>
+                            <p class="promo-block-text">Web Designers &amp; Front-end Developers</p>
+                        </div>
+                        <ul class="list-inline">
+                            <li><a href="#" class="social-icons"><i class="icon-social-facebook"></i></a></li>
+                            <li><a href="#" class="social-icons"><i class="icon-social-twitter"></i></a></li>
+                            <li><a href="#" class="social-icons"><i class="icon-social-github"></i></a></li>
+                            <li><a href="#" class="social-icons"><i class="icon-social-skype"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="form-row">
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Repet Password" />
-                </div
-              </div>
-              <div class="form-row">
-                <textarea cols="60" rows="3" id="comment" name="comment" class="form-control" placeholder="company description"></textarea>
-              <div>
-                <textarea cols="60" rows="3" id="comment" name="comment" class="form-control" placeholder="company address"></textarea>
-              </div>
-                <input type="submit" value="Зарегестрировать" class="btn btn-dark btn-lg" id="submit" name="submit" />
-      </form>
-</div>
-</div>
-</div>
-</section>
+                <!--// end row -->
+            </div>
+        </div>
+        <!--========== SLIDER ==========-->
+
+        <!--========== PAGE LAYOUT ==========-->
+        <!-- About -->
+        	<div id="about">
+            	<div class="container content-lg">
+                	<div class="row">
+	                    <div class="col-sm-3 sm-margin-b-30">
+	                        <div class="text-right sm-text-left">
+	                            <h2 class="margin-b-0">ShariX</h2>
+	                            <p>О нас</p>
+	                        </div>
+	                    </div>
+                    		<div class="col-sm-8 col-sm-offset-1">
+                        		<div class="margin-b-60">
+                            		<p>ShariX - это не просто платформа-агрегатор. Это методика построения или трансформации бизнеса в сферу цифровых услуг, с возможностью публикации своих возможностей на маркетплейсе нового поколения.</p>
+                        		</div>
+                    		</div>
+                    	</div>
+                    </div>
+                </div>
+                <!--// end row -->
+            </div>
+        <!-- End About -->
+
+        <div id="team">
+        	<div class="container content-lg">
+	        	<div class="row">
+	        		<div class="col-sm-3 sm-margin-b-30">
+	                    <div class="text-right sm-text-left">
+	                        <h2 class="margin-b-0">Команда</h2>
+	                    </div>
+	                </div>
+	                <!-- end row -->
+	        	</div>
+        	</div>
+        </div>
+
+        <!-- Work -->
+        <div id="work">
+            <div class="container content-lg">
+                <div class="row">
+                    <div class="col-sm-3 sm-margin-b-30">
+                        <div class="text-right sm-text-left">
+                            <h2 class="margin-b-0">Работы</h2>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-sm-offset-1">
+                        <!-- Masonry Grid -->
+                        <div class="masonry-grid row row-space-2">
+                            <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
+                            <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 md-margin-b-4">
+                                <!-- Work -->
+                                <div class="work work-popup-trigger">
+                                    <div class="work-overlay">
+                                        <img class="full-width img-responsive" src="img/397x300/01.jpg" alt="Portfolio Image">
+                                    </div>
+                                    <div class="work-popup-overlay">
+                                        <div class="work-popup-content">
+                                            <a href="javascript:void(0);" class="work-popup-close">Hide</a>
+                                            <div class="margin-b-30">
+                                                <h3 class="margin-b-5">Art Of Coding</h3>
+                                                <span>Clean &amp; Minimalistic Design</span>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
+                                                    <div class="margin-t-10 sm-margin-t-0">
+                                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                                                        <ul class="list-inline work-popup-tag">
+                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
+                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
+                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="margin-t-10 sm-margin-t-0">
+                                                        <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
+                                                        <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
+                                                        <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
+                                                        <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Work -->
+                            </div>
+                            <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 md-margin-b-4">
+                                <!-- Work -->
+                                <div class="work work-popup-trigger">
+                                    <div class="work-overlay">
+                                        <img class="full-width img-responsive" src="img/397x300/02.jpg" alt="Portfolio Image">
+                                    </div>
+                                    <div class="work-popup-overlay">
+                                        <div class="work-popup-content">
+                                            <a href="javascript:void(0);" class="work-popup-close">Hide</a>
+                                            <div class="margin-b-30">
+                                                <h3 class="margin-b-5">Art Of Coding</h3>
+                                                <span>Clean &amp; Minimalistic Design</span>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
+                                                    <div class="margin-t-10 sm-margin-t-0">
+                                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                                                        <ul class="list-inline work-popup-tag">
+                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
+                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
+                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="margin-t-10 sm-margin-t-0">
+                                                        <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
+                                                        <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
+                                                        <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
+                                                        <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Work -->
+                            </div>
+                        </div>
+                        <!-- End Masonry Grid -->
+                    </div>
+                </div>
+                <!--// end row -->
+            </div>
+        </div>
+        <!-- End Work -->
+
+        <!-- Experience -->
+        <div id="experience">
+            <div class="bg-color-sky-light" data-auto-height="true">
+                <div class="container content-lg">
+                    <div class="row">
+                        <div class="col-sm-3 sm-margin-b-30">
+                            <div class="text-right sm-text-left">
+                                <h2 class="margin-b-0">Технологии</h2>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-sm-offset-1">
+                            <div class="row row-space-2 margin-b-4">
+                                <div class="col-md-4 md-margin-b-4">
+                                    <div class="service" data-height="height">
+                                        <div class="service-element">
+                                            <i class="service-icon icon-note"></i>
+                                        </div>
+                                        <div class="service-info">
+                                            <h3>HTML5/CSS3</h3>
+                                            <p class="margin-b-5">Описание</p>
+                                        </div>
+                                        <a href="#" class="content-wrapper-link"></a>    
+                                    </div>
+                                </div>
+                                <div class="col-md-4 md-margin-b-4">
+                                    <div class="service bg-color-base wow zoomIn" data-height="height" data-wow-duration=".3" data-wow-delay=".1s">
+                                        <div class="service-element">
+                                            <i class="service-icon color-white icon-camera"></i>
+                                        </div>
+                                        <div class="service-info">
+                                            <h3 class="color-white">Photoshop</h3>
+                                            <p class="color-white margin-b-5">Описание</p>
+                                        </div>
+                                        <a href="#" class="content-wrapper-link"></a>    
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="service" data-height="height">
+                                        <div class="service-element">
+                                            <i class="service-icon icon-graph"></i>
+                                        </div>
+                                        <div class="service-info">
+                                            <h3>Front-end</h3>
+                                            <p class="margin-b-5">Описание</p>
+                                        </div>
+                                        <a href="#" class="content-wrapper-link"></a>    
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// end row -->
+                        </div>
+                    </div>
+                    <!--// end row -->
+                </div>
+            </div>
+        </div>
+        <!-- End Experience -->
+
+        <!-- Contact -->
+        <div id="contact">
+            <div class="bg-color-sky-light">
+                <div class="container content-lg">
+                    <div class="row">
+                        <div class="col-sm-3 sm-margin-b-30">
+                            <div class="text-right sm-text-left">
+                                <h2 class="margin-b-0">Контакты</h2>
+                                <p>Свяжитесь с нами</p>
+                            </div>
+                        </div>
+                        <!-- 
+                        <div class="col-sm-8 col-sm-offset-1">
+                            <div class="row">
+                                <div class="col-md-3 col-xs-6 md-margin-b-30">
+                                    <h5>Location</h5>
+                                    <a href="#">Brookyln, New York</a>
+                                </div>
+                                <div class="col-md-3 col-xs-6 md-margin-b-30">
+                                    <h5>Phone</h5>
+                                    <a href="#">+77 234 548 00 00</a>
+                                </div>
+                                <div class="col-md-3 col-xs-6">
+                                    <h5>Email</h5>
+                                    <a href="mailto:#">alex.teseira@gmail.com</a>
+                                </div>
+                                <div class="col-md-3 col-xs-6">
+                                    <h5>Web</h5>
+                                    <a href="#">alex.teseira.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                    <!--// end row -->
+                </div>
+            </div>
+        </div>
+        <!-- End Contact -->
+        <!--========== END PAGE LAYOUT ==========-->
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer">
+            <div class="content container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <img class="footer-logo" src="img/logo-dark.png" alt="Logo">
+                    </div>
+                    <div class="col-xs-6 text-right sm-text-left">
+                        <p class="margin-b-0">Powered by: <a class="fweight-700" href="#">Sharix Developers</a></p>
+                    </div>
+                </div>
+                <!--// end row -->
+            </div>
+        </footer>
+        <!--========== END FOOTER ==========-->
+
+        <!-- Back To Top -->
+        <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+        <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+        <!-- CORE PLUGINS -->
+        <script src="vendor/jquery.min.js" type="text/javascript"></script>
+        <script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+        <!-- PAGE LEVEL PLUGINS -->
+        <script src="vendor/jquery.easing.js" type="text/javascript"></script>
+        <script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
+        <script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
+        <script src="vendor/jquery.wow.min.js" type="text/javascript"></script>
+        <script src="vendor/jquery.parallax.min.js" type="text/javascript"></script>
+        <script src="vendor/jquery.appear.js" type="text/javascript"></script>
+        <script src="vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
+        <script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+
+        <!-- PAGE LEVEL SCRIPTS -->
+        <script src="js/layout.min.js" type="text/javascript"></script>
+        <script src="js/components/progress-bar.min.js" type="text/javascript"></script>
+        <script src="js/components/masonry.min.js" type="text/javascript"></script>
+        <script src="js/components/wow.min.js" type="text/javascript"></script>
+
+    </body>
+    <!-- END BODY -->
+</html>
