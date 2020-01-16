@@ -7,15 +7,19 @@ $to = "sharixdevelopers@mail.ru";//Почтовый ящик на который
 // Проверяем или метод запроса POST
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Поочередно проверяем или были переданные параметры формы, или они не пустые
-    if(isset($_POST["username"]){
+    if(isset($_POST["name"]){
       //Если параметр есть, присваеваем ему переданое значение
-      $name     =trim(strip_tags($_POST["username"]));
+      $name     =trim(strip_tags($_POST["name"]));
     }
-    if(isset($_POST["usernumber"]))
+    if(isset($_POST["phone"]))
     {
-      $number   = trim(strip_tags($_POST["usernumber"]));
+      $number   = trim(strip_tags($_POST["phone"]));
     }
-    if (isset( $_POST["question"])) {
+    if(isset($_POST["email"]){
+      //Если параметр есть, присваеваем ему переданое значение
+      $email     =trim(strip_tags($_POST["email"]));
+    }
+    if (isset( $_POST["comment"])) {
       $question   = trim(strip_tags($question));
     }
       // Формируем письмо
@@ -24,6 +28,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $message  .= "Телефон: ".$number;
         $message  .= "<br />";
         $message  .= "Имя: ".$name;
+        $message  .= "<br />";
+        $message  .= "Почта: ".$email;
         $message  .= "<br />";
         $message  .= "Вопрос: ".$question;
         $message  .= "</body>";

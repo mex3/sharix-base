@@ -328,21 +328,23 @@
                             </div>
                         </div>
                         <h2> Contact us </h2>
-		            	<form class="obratnuj-zvonok" autocomplete="off" action='form/contact.php' method='post'>
-							<div class="form-zvonok"> 
-							  	<div>
-							    	<label>Имя <span>*</span></label>
-							    	<input type='text' name='username' required></div>
-							  	<div>
-							    	<label>Номер телефона (с кодом) <span>*</span></label>
-							    	<input type='text' name='usernumber' required></div>
-							  	<div>
-							    	<label>Сообщение</label>
-							    	<input type='text' name='question'>
-								</div>
-								<input class="bot-send-mail" type='submit' value='Послать заявку'>
-							</div>
-						</form>
+		            	<form id="contact_form" method="post" action="form/contact.php">
+		                        <div class="form-row">
+		                          <input type="text" class="form-control" id="name" name="name" placeholder="Name" />
+		                        </div>
+		                        <div class="form-row">
+		                          <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" />
+		                        </div>
+		                        <div class="form-row">
+		                          <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+		                        </div>
+		                        <div class="form-row">
+		                          <textarea cols="60" rows="3" id="comment" name="comment" class="form-control" placeholder="Your message..."></textarea>
+		                        </div>
+		                        <div class="form-row">
+		                          <input type="submit" value="Написать" class="btn btn-dark btn-lg" id="submit" name="submit" />
+		                        </div>
+		                </form>
                     </div>
                     <!--// end row -->
                 </div>
