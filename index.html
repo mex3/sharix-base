@@ -11,6 +11,7 @@
 
         <!-- GLOBAL MANDATORY STYLES -->
         <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Cuprum&display=swap" rel="stylesheet">
         <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css"/>
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" type="text/css" href="css/text_style.css">
@@ -83,7 +84,7 @@
                         <ul class="list-inline">
                             <li><a href="#" class="social-icons"><i class="icon-social-facebook"></i></a></li>
                             <li><a href="#" class="social-icons"><i class="icon-social-twitter"></i></a></li>
-                            <li><a href="#" class="social-icons"><i class="icon-social-github"></i></a></li>
+                            <li><a href="https://github.com/mex3/sharix-base" class="social-icons"><i class="icon-social-github"></i></a></li>
                             <li><a href="#" class="social-icons"><i class="icon-social-skype"></i></a></li>
                         </ul>
                     </div>
@@ -154,10 +155,7 @@
                   </div>
               </div>
               <!--// end row -->
-      <!-- End Work -->
-
-
-
+    	<!-- End Work -->
 
         <!-- Work -->
         <div id="team">
@@ -328,6 +326,24 @@
                                 <p>Свяжитесь с нами</p>
                             </div>
                         </div>
+                        <h2> Contact us </h2>
+		            	<form id="contact_form" method="post" action="form/contact.php">
+		                        <div class="form-row">
+		                          <input type="text" class="form-control" id="name" name="name" placeholder="Name" />
+		                        </div>
+		                        <div class="form-row">
+		                          <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" />
+		                        </div>
+		                        <div class="form-row">
+		                          <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+		                        </div>
+		                        <div class="form-row">
+		                          <textarea cols="60" rows="3" id="comment" name="comment" class="form-control" placeholder="Your message..."></textarea>
+		                        </div>
+		                        <div class="form-row">
+		                          <input type="submit" value="Написать" class="btn btn-dark btn-lg" id="submit" name="submit" />
+		                        </div>
+		                </form>
                         <!--
                         <div class="col-sm-8 col-sm-offset-1">
                             <div class="row">

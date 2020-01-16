@@ -1,3 +1,15 @@
 p {
-	color: black;
+	line-height: 1.4;
+	font-size: 18px;
+	font-weight: 400;
+	color: #737478;
+	margin-bottom: 15px;
+	font-family: 'Cuprum', sans-serif;
+}
+
+li{
+	font-size: 18px;
+	color: #737478;
+	margin-bottom: 10px;
+	font-family: 'Cuprum', sans-serif;
 }

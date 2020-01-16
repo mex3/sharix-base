@@ -5,9 +5,9 @@
 //$receiving_email_address = "youremail@domainname.com";  // Set your email address here which you want to receive emails to
 $receiving_email_address = "info@sharix-app.org";  // Set your email address here which you want to receive emails to
 
-$receiving_email_address_name = "your_name_here"; // Add name that is associated with your email address above.
+$receiving_email_address_name = "Sharix Developers"; // Add name that is associated with your email address above.
 
-$custom_subject = "Hello From [Website Name] Contact Form"; // Change the subject line of email as per your choice.
+$custom_subject = "Hello From [ShariX-app.org] Contact Form"; // Change the subject line of email as per your choice.
 
 
 // =============================  DO NOT EDIT BELOW THIS LINE  ======================================
