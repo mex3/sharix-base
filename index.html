@@ -23,7 +23,8 @@
         <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
 
         <!-- Favicon -->
-        <link rel="shortcut icon" href="favicon.ico"/>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+
     </head>
     <!-- END HEAD -->
 
@@ -327,45 +328,21 @@
                             </div>
                         </div>
                         <h2> Contact us </h2>
-		            	<form id="contact_form" method="post" action="form/contact.php">
-		                        <div class="form-row">
-		                          <input type="text" class="form-control" id="name" name="name" placeholder="Name" />
-		                        </div>
-		                        <div class="form-row">
-		                          <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" />
-		                        </div>
-		                        <div class="form-row">
-		                          <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
-		                        </div>
-		                        <div class="form-row">
-		                          <textarea cols="60" rows="3" id="comment" name="comment" class="form-control" placeholder="Your message..."></textarea>
-		                        </div>
-		                        <div class="form-row">
-		                          <input type="submit" value="Написать" class="btn btn-dark btn-lg" id="submit" name="submit" />
-		                        </div>
-		                </form>
-                        <!--
-                        <div class="col-sm-8 col-sm-offset-1">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6 md-margin-b-30">
-                                    <h5>Location</h5>
-                                    <a href="#">Brookyln, New York</a>
-                                </div>
-                                <div class="col-md-3 col-xs-6 md-margin-b-30">
-                                    <h5>Phone</h5>
-                                    <a href="#">+77 234 548 00 00</a>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <h5>Email</h5>
-                                    <a href="mailto:#">alex.teseira@gmail.com</a>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <h5>Web</h5>
-                                    <a href="#">alex.teseira.com</a>
-                                </div>
-                            </div>
-                        </div>
-                        -->
+		            	<form class="obratnuj-zvonok" autocomplete="off" action='form/contact.php' method='post'>
+							<div class="form-zvonok"> 
+							  	<div>
+							    	<label>Имя <span>*</span></label>
+							    	<input type='text' name='username' required></div>
+							  	<div>
+							    	<label>Номер телефона (с кодом) <span>*</span></label>
+							    	<input type='text' name='usernumber' required></div>
+							  	<div>
+							    	<label>Сообщение</label>
+							    	<input type='text' name='question'>
+								</div>
+								<input class="bot-send-mail" type='submit' value='Послать заявку'>
+							</div>
+						</form>
                     </div>
                     <!--// end row -->
                 </div>
