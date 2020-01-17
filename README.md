@@ -5,8 +5,8 @@
   <br>
   <br>
 </div>
-# sharix-base
-## Sharix is universal sharing platform.
-## Our <a href="http://sharix-app.org/">site</a>
+# Sharix-base
+Sharix is universal sharing platform.
+Our <a href="http://sharix-app.org/">site</a>
 
 
