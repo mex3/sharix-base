@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/mex3/sharix-base">
-    <img width="150" height="150" src="https://host.dexmp.now.sh/">
+    <img width="160" height="150" src="https://host.dexmp.now.sh/">
   </a>
   <br>
   <br>
