@@ -6,7 +6,7 @@
   <br>
 </div>
 <h1>Sharix-base</h1>
-Sharix is universal sharing platform.
-Our <a href="http://sharix-app.org/">site</a>
+<h3>Sharix is universal sharing platform.</h3>
+<h5>Our <a href="http://sharix-app.org/">site</a></h5>
 
 
