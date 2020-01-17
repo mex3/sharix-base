@@ -6,7 +6,7 @@
   <br>
 </div>
 # sharix-base
-Sharix is universal sharing platform.
-
+## Sharix is universal sharing platform.
+## Our <a href="http://sharix-app.org/">site</a>
 
 
