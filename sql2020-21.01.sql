@@ -23,6 +23,8 @@ CREATE TABLE sharix.Users
     email VARCHAR (320) NOT NULL, -- почта человека 
     TelephoneNumber INT(5) NOT NULL, -- номер телефона человека
     upassword VARCHAR(500) NOT NULL -- пароль человека
+        payment VARCHAR(50) NOT NULL -- счет оплаты
+
 );
 GO
 
