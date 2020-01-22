@@ -5,9 +5,9 @@
 //$receiving_email_address = "youremail@domainname.com";  // Set your email address here which you want to receive emails to
 $receiving_email_address = "info@sharix-app.org";  // Set your email address here which you want to receive emails to
 
-$receiving_email_address_name = "your_name_here"; // Add name that is associated with your email address above.
+$receiving_email_address_name = "ShariX App Support Team"; // Add name that is associated with your email address above.
 
-$custom_subject = "Hello From [Website Name] Contact Form"; // Change the subject line of email as per your choice.
+$custom_subject = "Hello From ShariX APP Contact Form"; // Change the subject line of email as per your choice.
 
 
 // =============================  DO NOT EDIT BELOW THIS LINE  ======================================
@@ -39,7 +39,7 @@ $body = "Below are the details submitted by the user on your website.<br><br> Na
 			 ".$_POST['name']."<br><br>Email: ".$_POST['email']."<br><br>Phone: ".$_POST['phone']."<br><br>Comment: ".$_POST['comment']."";
 
 // Check if the security is filled
-if ( $_POST['security'] == '' ) {
+if ( $_POST['email'] == '' ) {
 
 	require("phpmailer.php");
 	$mail = new PHPMailer();
