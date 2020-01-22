@@ -7,7 +7,7 @@ p {
 	font-family: 'Cuprum', sans-serif;
 }
 
-li{
+li, li a{
 	font-size: 18px;
 	color: #737478;
 	margin-bottom: 10px;
