@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/logo2"
+    tools:context=".Auth">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:background="@color/logo2"
+        android:layout_gravity="center|top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible"
+            android:inputType="textEmailAddress"
+            android:hint="Почта"
+            android:textColorHint="@color/hint"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            android:inputType="textPersonName"
+            android:hint="Имя"
+            android:textColorHint="@color/hint"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible"
+            android:inputType="textPassword"
+            android:hint="Пароль"
+            android:textColorHint="@color/hint"/>
+
+        <TextView
+            android:id="@+id/rules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_margin="15dp"
+            android:visibility="gone"
+            android:text="Правила сайта и приложения"/>
+
+        <FrameLayout
+            android:id="@+id/checkRules_host"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:visibility="visible">
+
+            <CheckBox
+                android:id="@+id/checkRules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="90dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Я прочитал и согласен"
+                android:textColor="@color/hint" />
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/singIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            android:text="Войти"
+            android:background="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:text="Создать"
+            android:background="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/registration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Регистрация"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/text_acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:text="Уже есть аккаунт?"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

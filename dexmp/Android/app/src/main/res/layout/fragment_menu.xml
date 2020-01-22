@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/logo3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/menu_profile"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/logo2"
+                android:layout_margin="4dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="25dp"
+                    app:cardCornerRadius="100dp">
+
+                    <ImageView
+                        android:id="@+id/ava_menu"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/menu_name_surname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Имя Фамилия"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Открыть профиль"
+                    android:textSize="16sp"
+                    android:textColor="@color/hint"
+                    android:layout_marginTop="10dp"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/pt1"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="4dp"
+                android:background="@color/logo2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:text="Пункт меню 1"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/pt2"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="4dp"
+                android:background="@color/logo2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:text="Пункт меню 2"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
