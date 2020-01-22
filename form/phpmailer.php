@@ -171,7 +171,7 @@ class PHPMailer
      *  Sets SMTP authentication. Utilizes the Username and Password variables.
      *  @var bool
      */
-    var $SMTPAuth     = false;
+    var $SMTPAuth     = true;
 
     /**
      *  Sets SMTP username.
