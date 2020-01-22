@@ -16,10 +16,6 @@ if ((isset($_POST['name'])) && (strlen(trim($_POST['name'])) > 0)) {
 	$name = stripslashes(strip_tags($_POST['name']));
 } else {$name = 'No name entered';}
 
-if ((isset($_POST['phone'])) && (strlen(trim($_POST['phone'])) > 0)) {
-	$phone = stripslashes(strip_tags($_POST['phone']));
-} else {$phone = 'No phone entered';}
-
 if ((isset($_POST['email'])) && (strlen(trim($_POST['email'])) > 0)) {
 	$email = stripslashes(strip_tags($_POST['email']));
 } else {$email = 'No email entered';}
@@ -39,7 +35,7 @@ $body = "Below are the details submitted by the user on your website.<br><br> Na
 			 ".$_POST['name']."<br><br>Email: ".$_POST['email']."<br><br>Phone: ".$_POST['phone']."<br><br>Comment: ".$_POST['comment']."";
 
 // Check if the security is filled
-if ( $_POST['email'] == '' ) {
+if ( $_POST['security'] == '' ) {
 
 	require("phpmailer.php");
 	$mail = new PHPMailer();
