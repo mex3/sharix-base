@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_library"
+        android:icon="@drawable/ic_books_24dp"
+        android:title="@string/library" />
+
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/ic_history_24dp"
+        android:title="@string/history" />
+
+    <item
+        android:id="@+id/navigation_menu"
+        android:icon="@drawable/ic_menu_24dp"
+        android:title="@string/menu" />
+
+</menu>
