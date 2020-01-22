@@ -1,4 +1,4 @@
--- phpMyAdmin SQL Dump
+﻿-- phpMyAdmin SQL Dump
 -- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
@@ -22,29 +22,12 @@ SET time_zone = "+00:00";
 -- База данных: `structure`
 --
 
--- --------------------------------------------------------
 
 --
--- Структура таблицы `comments`
+-- Структура таблицы `appointments`
 --
 
-CREATE TABLE `comments` (
-  `c_id` int(11) NOT NULL,
-  `c_author_id` int(11) NOT NULL,
-  `c_post_id` int(11) NOT NULL,
-  `c_content` varchar(10000) CHARACTER SET utf8mb4 NOT NULL,
-  `c_edited` int(11) NOT NULL,
-  `c_time_edited` varchar(100) NOT NULL,
-  `c_time` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `ea_appointments`
---
-
-CREATE TABLE `ea_appointments` (
+CREATE TABLE `appointments` (
   `id` int(11) NOT NULL,
   `book_datetime` datetime DEFAULT NULL,
   `start_datetime` datetime DEFAULT NULL,
@@ -61,37 +44,10 @@ CREATE TABLE `ea_appointments` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `ea_consents`
+-- Структура таблицы `roles`
 --
 
-CREATE TABLE `ea_consents` (
-  `id` int(11) NOT NULL,
-  `created` datetime DEFAULT current_timestamp(),
-  `modified` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `first_name` varchar(256) DEFAULT NULL,
-  `last_name` varchar(256) DEFAULT NULL,
-  `email` varchar(512) DEFAULT NULL,
-  `ip` varchar(256) DEFAULT NULL,
-  `type` varchar(256) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `ea_migrations`
---
-
-CREATE TABLE `ea_migrations` (
-  `version` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `ea_roles`
---
-
-CREATE TABLE `ea_roles` (
+CREATE TABLE `roles` (
   `id` int(11) NOT NULL,
   `name` varchar(256) DEFAULT NULL,
   `slug` varchar(256) DEFAULT NULL,
@@ -106,19 +62,9 @@ CREATE TABLE `ea_roles` (
 
 -- --------------------------------------------------------
 
---
--- Структура таблицы `ea_secretaries_providers`
---
-
-CREATE TABLE `ea_secretaries_providers` (
-  `id_secretary` int(11) NOT NULL,
-  `id_provider` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
 
 --
--- Структура таблицы `ea_services`
+-- Структура таблицы `services`
 --
 
 CREATE TABLE `ea_services` (
@@ -136,18 +82,7 @@ CREATE TABLE `ea_services` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `ea_services_providers`
---
-
-CREATE TABLE `ea_services_providers` (
-  `id` int(11) NOT NULL,
-  `id_services` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `ea_service_categories`
+-- Структура таблицы `service_categories`
 --
 
 CREATE TABLE `ea_service_categories` (
@@ -159,22 +94,10 @@ CREATE TABLE `ea_service_categories` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `ea_settings`
+-- Структура таблицы `user`
 --
 
-CREATE TABLE `ea_settings` (
-  `id` int(11) NOT NULL,
-  `name` varchar(512) DEFAULT NULL,
-  `value` longtext DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `signup`
---
-
-CREATE TABLE `signup` (
+CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `username` varchar(256) DEFAULT NULL,
   `password` varchar(512) DEFAULT NULL,
@@ -231,47 +154,6 @@ CREATE TABLE `follow` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `likes`
---
-
-CREATE TABLE `likes` (
-  `id` int(11) NOT NULL,
-  `liker` int(11) NOT NULL,
-  `post_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `messages`
---
-
-CREATE TABLE `messages` (
-  `id` int(11) NOT NULL,
-  `message` varchar(1538) NOT NULL,
-  `m_from` int(11) NOT NULL,
-  `m_to` int(11) NOT NULL,
-  `m_time` int(11) NOT NULL,
-  `m_seen` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `mynotepad`
---
-
-CREATE TABLE `mynotepad` (
-  `main_id` int(11) NOT NULL,
-  `author_id` int(11) NOT NULL,
-  `note_title` varchar(1000) NOT NULL,
-  `note_content` varchar(1000) NOT NULL,
-  `note_time` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Структура таблицы `notificationsc`
 --
 
@@ -287,30 +169,6 @@ CREATE TABLE `notificationsc` (
 
 -- --------------------------------------------------------
 
---
--- Структура таблицы `r_star`
---
-
-CREATE TABLE `r_star` (
-  `id` int(11) NOT NULL,
-  `minion` int(11) NOT NULL,
-  `favorite` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `saved`
---
-
-CREATE TABLE `saved` (
-  `main_id` int(11) NOT NULL,
-  `post_id` int(11) NOT NULL,
-  `user_saved_id` int(11) NOT NULL,
-  `saved_time` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
 
 --
 -- Структура таблицы `supportbox`
@@ -331,36 +189,13 @@ CREATE TABLE `supportbox` (
 
 -- --------------------------------------------------------
 
---
--- Структура таблицы `wpost`
---
-
-CREATE TABLE `wpost` (
-  `post_id` int(11) NOT NULL,
-  `author_id` int(11) NOT NULL,
-  `post_img` varchar(1000) CHARACTER SET utf8mb4 NOT NULL,
-  `post_time` int(11) NOT NULL,
-  `post_content` mediumtext CHARACTER SET utf8mb4 NOT NULL,
-  `p_title` varchar(1000) CHARACTER SET utf8mb4 NOT NULL,
-  `p_likes` int(100) NOT NULL,
-  `p_privacy` int(11) NOT NULL,
-  `shared` varchar(1000) CHARACTER SET utf8mb4 NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Индексы сохранённых таблиц
 --
 
 --
--- Индексы таблицы `comments`
---
-ALTER TABLE `comments`
-  ADD PRIMARY KEY (`c_id`) USING BTREE,
-  ADD KEY `c_author_id` (`c_author_id`),
-  ADD KEY `c_post_id` (`c_post_id`);
-
---
--- Индексы таблицы `ea_appointments`
+-- Индексы таблицы `appointments`
 --
 ALTER TABLE `ea_appointments`
   ADD PRIMARY KEY (`id`),
@@ -368,11 +203,6 @@ ALTER TABLE `ea_appointments`
   ADD KEY `id_services` (`id_services`),
   ADD KEY `id_provider` (`id_provider`);
 
---
--- Индексы таблицы `ea_consents`
---
-ALTER TABLE `ea_consents`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Индексы таблицы `ea_roles`
@@ -380,39 +210,21 @@ ALTER TABLE `ea_consents`
 ALTER TABLE `ea_roles`
   ADD PRIMARY KEY (`id`);
 
---
--- Индексы таблицы `ea_secretaries_providers`
---
-ALTER TABLE `ea_secretaries_providers`
-  ADD PRIMARY KEY (`id_secretary`,`id_provider`),
-  ADD KEY `id_secretary` (`id_secretary`),
-  ADD KEY `id_provider` (`id_provider`);
 
 --
--- Индексы таблицы `ea_services`
+-- Индексы таблицы `services`
 --
-ALTER TABLE `ea_services`
+ALTER TABLE `services`
   ADD PRIMARY KEY (`id`),
   ADD KEY `id_service_categories` (`id_service_categories`);
 
---
--- Индексы таблицы `ea_services_providers`
---
-ALTER TABLE `ea_services_providers`
-  ADD PRIMARY KEY (`id`,`id_services`),
-  ADD KEY `id_services` (`id_services`);
 
 --
--- Индексы таблицы `ea_service_categories`
+-- Индексы таблицы `service_categories`
 --
 ALTER TABLE `ea_service_categories`
   ADD PRIMARY KEY (`id`);
 
---
--- Индексы таблицы `ea_settings`
---
-ALTER TABLE `ea_settings`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Индексы таблицы `signup`
@@ -430,29 +242,6 @@ ALTER TABLE `follow`
   ADD KEY `read` (`read`);
 
 --
--- Индексы таблицы `likes`
---
-ALTER TABLE `likes`
-  ADD PRIMARY KEY (`id`) USING BTREE,
-  ADD KEY `post_id` (`post_id`),
-  ADD KEY `liker` (`liker`);
-
---
--- Индексы таблицы `messages`
---
-ALTER TABLE `messages`
-  ADD PRIMARY KEY (`id`) USING BTREE,
-  ADD KEY `m_from` (`m_from`),
-  ADD KEY `m_to` (`m_to`);
-
---
--- Индексы таблицы `mynotepad`
---
-ALTER TABLE `mynotepad`
-  ADD PRIMARY KEY (`main_id`) USING BTREE,
-  ADD KEY `author_id` (`author_id`);
-
---
 -- Индексы таблицы `notificationsc`
 --
 ALTER TABLE `notificationsc`
@@ -460,21 +249,6 @@ ALTER TABLE `notificationsc`
   ADD KEY `from_id` (`from_id`),
   ADD KEY `for_id` (`for_id`);
 
---
--- Индексы таблицы `r_star`
---
-ALTER TABLE `r_star`
-  ADD PRIMARY KEY (`id`) USING BTREE,
-  ADD KEY `minion` (`minion`),
-  ADD KEY `favorite` (`favorite`);
-
---
--- Индексы таблицы `saved`
---
-ALTER TABLE `saved`
-  ADD PRIMARY KEY (`main_id`) USING BTREE,
-  ADD KEY `post_id` (`post_id`),
-  ADD KEY `user_saved_id` (`user_saved_id`);
 
 --
 -- Индексы таблицы `supportbox`
@@ -484,57 +258,33 @@ ALTER TABLE `supportbox`
   ADD KEY `from_id` (`from_id`),
   ADD KEY `for_id` (`for_id`);
 
---
--- Индексы таблицы `wpost`
---
-ALTER TABLE `wpost`
-  ADD PRIMARY KEY (`post_id`) USING BTREE,
-  ADD KEY `author_id` (`author_id`);
 
 --
 -- AUTO_INCREMENT для сохранённых таблиц
 --
 
 --
--- AUTO_INCREMENT для таблицы `comments`
---
-ALTER TABLE `comments`
-  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT для таблицы `ea_appointments`
+-- AUTO_INCREMENT для таблицы `appointments`
 --
 ALTER TABLE `ea_appointments`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `ea_consents`
---
-ALTER TABLE `ea_consents`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT для таблицы `ea_roles`
+-- AUTO_INCREMENT для таблицы `roles`
 --
 ALTER TABLE `ea_roles`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `ea_services`
+-- AUTO_INCREMENT для таблицы `services`
 --
 ALTER TABLE `ea_services`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `ea_service_categories`
+-- AUTO_INCREMENT для таблицы `service_categories`
 --
 ALTER TABLE `ea_service_categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT для таблицы `ea_settings`
---
-ALTER TABLE `ea_settings`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
@@ -544,147 +294,12 @@ ALTER TABLE `follow`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `likes`
---
-ALTER TABLE `likes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT для таблицы `messages`
---
-ALTER TABLE `messages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT для таблицы `mynotepad`
---
-ALTER TABLE `mynotepad`
-  MODIFY `main_id` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT для таблицы `notificationsc`
 --
 ALTER TABLE `notificationsc`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
---
--- AUTO_INCREMENT для таблицы `r_star`
---
-ALTER TABLE `r_star`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
---
--- AUTO_INCREMENT для таблицы `saved`
---
-ALTER TABLE `saved`
-  MODIFY `main_id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- Ограничения внешнего ключа сохраненных таблиц
---
-
---
--- Ограничения внешнего ключа таблицы `comments`
---
-ALTER TABLE `comments`
-  ADD CONSTRAINT `comments_ibfk_2` FOREIGN KEY (`c_post_id`) REFERENCES `wpost` (`post_id`),
-  ADD CONSTRAINT `comments_ibfk_3` FOREIGN KEY (`c_author_id`) REFERENCES `signup` (`id`);
-
---
--- Ограничения внешнего ключа таблицы `ea_appointments`
---
-ALTER TABLE `ea_appointments`
-  ADD CONSTRAINT `ea_appointments_ibfk_1` FOREIGN KEY (`id_provider`) REFERENCES `signup` (`id`),
-  ADD CONSTRAINT `ea_appointments_ibfk_2` FOREIGN KEY (`id_customer`) REFERENCES `signup` (`id`),
-  ADD CONSTRAINT `ea_appointments_ibfk_3` FOREIGN KEY (`id_services`) REFERENCES `ea_services` (`id`);
-
---
--- Ограничения внешнего ключа таблицы `ea_secretaries_providers`
---
-ALTER TABLE `ea_secretaries_providers`
-  ADD CONSTRAINT `ea_secretaries_providers_ibfk_1` FOREIGN KEY (`id_secretary`) REFERENCES `signup` (`id`),
-  ADD CONSTRAINT `ea_secretaries_providers_ibfk_2` FOREIGN KEY (`id_provider`) REFERENCES `signup` (`id`);
-
---
--- Ограничения внешнего ключа таблицы `ea_services`
---
-ALTER TABLE `ea_services`
-  ADD CONSTRAINT `ea_services_ibfk_1` FOREIGN KEY (`id_service_categories`) REFERENCES `ea_service_categories` (`id`);
-
---
--- Ограничения внешнего ключа таблицы `ea_services_providers`
---
-ALTER TABLE `ea_services_providers`
-  ADD CONSTRAINT `ea_services_providers_ibfk_1` FOREIGN KEY (`id`) REFERENCES `signup` (`id`),
-  ADD CONSTRAINT `ea_services_providers_ibfk_2` FOREIGN KEY (`id_services`) REFERENCES `ea_services` (`id`);
-
---
--- Ограничения внешнего ключа таблицы `signup`
---
-ALTER TABLE `signup`
-  ADD CONSTRAINT `signup_ibfk_1` FOREIGN KEY (`id_roles`) REFERENCES `ea_roles` (`id`);
-
---
--- Ограничения внешнего ключа таблицы `follow`
---
-ALTER TABLE `follow`
-  ADD CONSTRAINT `follow_ibfk_1` FOREIGN KEY (`reader`) REFERENCES `signup` (`id`),
-  ADD CONSTRAINT `follow_ibfk_2` FOREIGN KEY (`read`) REFERENCES `signup` (`id`);
-
---
--- Ограничения внешнего ключа таблицы `likes`
---
-ALTER TABLE `likes`
-  ADD CONSTRAINT `likes_ibfk_1` FOREIGN KEY (`liker`) REFERENCES `signup` (`id`),
-  ADD CONSTRAINT `likes_ibfk_2` FOREIGN KEY (`post_id`) REFERENCES `wpost` (`post_id`);
-
---
--- Ограничения внешнего ключа таблицы `messages`
---
-ALTER TABLE `messages`
-  ADD CONSTRAINT `messages_ibfk_1` FOREIGN KEY (`m_from`) REFERENCES `signup` (`id`),
-  ADD CONSTRAINT `messages_ibfk_2` FOREIGN KEY (`m_to`) REFERENCES `signup` (`id`);
-
---
--- Ограничения внешнего ключа таблицы `mynotepad`
---
-ALTER TABLE `mynotepad`
-  ADD CONSTRAINT `mynotepad_ibfk_1` FOREIGN KEY (`author_id`) REFERENCES `signup` (`id`);
-
---
--- Ограничения внешнего ключа таблицы `notificationsc`
---
-ALTER TABLE `notificationsc`
-  ADD CONSTRAINT `notificationsc_ibfk_1` FOREIGN KEY (`from_id`) REFERENCES `signup` (`id`),
-  ADD CONSTRAINT `notificationsc_ibfk_2` FOREIGN KEY (`for_id`) REFERENCES `signup` (`id`);
-
---
--- Ограничения внешнего ключа таблицы `r_star`
---
-ALTER TABLE `r_star`
-  ADD CONSTRAINT `r_star_ibfk_1` FOREIGN KEY (`minion`) REFERENCES `signup` (`id`),
-  ADD CONSTRAINT `r_star_ibfk_2` FOREIGN KEY (`favorite`) REFERENCES `signup` (`id`);
-
---
--- Ограничения внешнего ключа таблицы `saved`
---
-ALTER TABLE `saved`
-  ADD CONSTRAINT `saved_ibfk_1` FOREIGN KEY (`post_id`) REFERENCES `wpost` (`post_id`),
-  ADD CONSTRAINT `saved_ibfk_2` FOREIGN KEY (`user_saved_id`) REFERENCES `signup` (`id`);
-
---
--- Ограничения внешнего ключа таблицы `supportbox`
---
-ALTER TABLE `supportbox`
-  ADD CONSTRAINT `supportbox_ibfk_1` FOREIGN KEY (`from_id`) REFERENCES `signup` (`id`),
-  ADD CONSTRAINT `supportbox_ibfk_2` FOREIGN KEY (`for_id`) REFERENCES `signup` (`id`);
-
---
--- Ограничения внешнего ключа таблицы `wpost`
---
-ALTER TABLE `wpost`
-  ADD CONSTRAINT `wpost_ibfk_1` FOREIGN KEY (`author_id`) REFERENCES `signup` (`id`);
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
