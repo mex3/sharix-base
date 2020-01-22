@@ -10,7 +10,6 @@ $receiving_email_address_name = "ShariX App Support Team"; // Add name that is a
 $custom_subject = "Hello From ShariX APP Contact Form"; // Change the subject line of email as per your choice.
 
 
-// =============================  DO NOT EDIT BELOW THIS LINE  ======================================
 
 if ((isset($_POST['name'])) && (strlen(trim($_POST['name'])) > 0)) {
 	$name = stripslashes(strip_tags($_POST['name']));
@@ -32,7 +31,7 @@ $email 			= $_POST['email'];
 $fromaddress 	= $_POST['email'];
 $fromname 		= $_POST['name'];
 $body = "Below are the details submitted by the user on your website.<br><br> Name:
-			 ".$_POST['name']."<br><br>Email: ".$_POST['email']."<br><br>Phone: ".$_POST['phone']."<br><br>Comment: ".$_POST['comment']."";
+			 ".$_POST['name']."<br><br>Email: ".$_POST['email']."<br><br>Comment: ".$_POST['comment']."";
 
 // Check if the security is filled
 if ( $_POST['security'] == '' ) {
