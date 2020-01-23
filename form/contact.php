@@ -9,7 +9,7 @@ $receiving_email_address_name = "ShariX App Support Team"; // Add name that is a
 
 $custom_subject = "Hello From ShariX APP Contact Form"; // Change the subject line of email as per your choice.
 
-
+use PHPMailer\PHPMailer\PHPMailer;
 
 if ((isset($_POST['name'])) && (strlen(trim($_POST['name'])) > 0)) {
 	$name = stripslashes(strip_tags($_POST['name']));
@@ -36,7 +36,7 @@ $body = "Below are the details submitted by the user on your website.<br><br> Na
 // Check if the security is filled
 if ( $_POST['security'] == '' ) {
 
-	require("phpmailer.php");
+	require("PHPMailer.php");
 	$mail = new PHPMailer();
 
 	$mail->From    					= "$email";
