@@ -2,65 +2,93 @@
 
 CREATE TABLE `sharix.Users`   
 (
-    `UsersId` INT NOT NULL PRIMARY KEY, /* primary key column*/
-    `utype`  VARCHAR(3) NOT NULL, /*custemer(rx), bisness(wx), superuser(rwx)*/
-    `uname`  VARCHAR(50) NOT NULL, /* имя человека */
-    `ulogin` VARCHAR(50) NOT NULL, /* логин человека*/
-    `email` VARCHAR (320) NOT NULL, /* почта человека*/
-    `TelephoneNumber` INT(5) NOT NULL, /* номер телефона человека*/
-    `upassword` VARCHAR(500) NOT NULL, /* пароль человека*/
-    `payment` VARCHAR(50) NOT NULL /* счет оплаты*/
-
-);
-
-----------------------------------------------------------------------------------------------------
-
-
-CREATE TABLE `sharix.orders`
-(
-    `ordersId` INT NOT NULL PRIMARY KEY, /* primary key column
-    `otype` INT(5) NOT NULL, /*otype(type утилита)*/
-    `starttime` DATETIME(10) NOT NULL, /*время начала предоставления услуги*/
-    `finishtime` DATETIME(10) NOT NULL, /* завершение предоставления услуги*/
-    `place` FLOAT(10, 6) NOT NULL, /* Место нахождение check(https://medium.com/maatwebsite/the-best-way-to-locate-in-mysql-8-e47a59892443)*/
-    `price` Int (50) NOT NULL, /* цена за услугу */
-    `rating` INT(5) NOT NULL, /*рейтинг */
-    `idProvider` INT(5) NOT NULL, /*тот кто предоставляет услугу "берем id"*/
-    `idResiver` INT(5) NOT NULL /*тот кто заказл услугу "берем id" */
+    `UsersID` INT NOT NULL PRIMARY KEY, /* ID пользователя*/
+    `UserType`  VARCHAR(30) NOT NULL, /* тип пользователя (клиент, исполнитель)*/
+    `UserName`  VARCHAR(50) NOT NULL, /* имя человека */
+    `Login` VARCHAR(50) NOT NULL, /* логин человека*/
+    `Email` VARCHAR (320) NOT NULL, /* почта человека*/
+    `TelephoneNumber` INT(10) NOT NULL, /* номер телефона человека*/
+    `Password` VARCHAR(500) NOT NULL, /* пароль человека*/
+    `Payment` VARCHAR(50) NOT NULL /* счет оплаты*/
 );
 
 
-----------------------------------------------------------------------------------------------------
-
-
-CREATE TABLE `sharix.ttype`
+CREATE TABLE `Sharix.Organization`
 (
-    `typeId` INT NOT NULL PRIMARY KEY, /*primary key column*/
-    `ttype` VARCHAR(50) NOT NULL, /*название*/ 
-    `uidtype` VARCHAR(10) NOT NULL /* кто он (provider, resours)*/
+    `OrganizationID` INT NOT NULL PRIMARY KEY, /*ID организации*/
+    `OrganizationName` VARCHAR(30) NOT NULL, /*Название организации*/
+    `OrganizatoinTypeID` INT(5) NOT NULL, /* ID типа организации */
+    `ProviderID` INT(5) NOT NULL /*ID ответственного за услугу лица от организации*/
+);
+
+CREATE TABLE `Sharix.OrganizatoinType`
+(
+    `OrganizatoinTypeID` INT NOT NULL PRIMARY KEY, /*ID типа организации*/
+    `OrganizatoinTypeName` VARCHAR(30) NOT NULL /*Название типа организации*/
+);
+
+CREATE TABLE `Sharix.Providers`
+(
+    `ProvederID` INT NOT NULL PRIMARY KEY, /*ID исполнителя услуги*/
+    `ProviderName` VARCHAR(30) NOT NULL, /*ФИО исполнителя(из таблицы пользователей)*/
+    `OrderTypeID` INT(5) NOT NULL, /* ID типа услуги */
+    `OrganizationTypeID` INT(5) NOT NULL, /*ID типа организации*/
+    `OrganizationID` INT(5) NOT NULL /*ID организации*/
 );
 
 
-----------------------------------------------------------------------------------------------------
 
 
-CREATE TABLE `sharix.provider`
+CREATE TABLE `Sharix.NegType`
 (
-    `providerId` INT NOT NULL PRIMARY KEY, /*primary key column*/
-    `ptype` INT(5) NOT NULL, /*класс услугии*/
-    `pform` INT(5) NOT NULL,
-    `pname` INT(5) NOT NULL, /*сам человек*/
-    `lagalname` INT(5) NOT NULL /*его ИП*/
+    `NegTypeID` INT NOT NULL PRIMARY KEY, /*ID типа взаимоотношений*/
+    `NegTypeName` VARCHAR(30) NOT NULL /*название типа взаимоотношений */
 );
 
-----------------------------------------------------------------------------------------------------
-
-
-
-CREATE TABLE `follows`
+CREATE TABLE `Sharix.Negotiations`
 (
-    `followsId` INT NOT NULL PRIMARY KEY, /*primary key column*/
-    `reader` INT(11) NOT NULL, 
-    `fRead` INT(11) NOT NULL
+    `NegotiationsID` INT NOT NULL PRIMARY KEY, /*ID взаимоотношения*/
+    `UserIDWho` VARCHAR(30) NOT NULL, /*инициатор услуги*/
+    `UserIDWhom` VARCHAR(30) NOT NULL, /*исполнитель услуги*/
+    `NegTypeID` INT(5) NOT NULL /*ID типа взаимоотношений*/
+);
+
+
+CREATE TABLE `Sharix.Orders`
+(
+    `OrdersID` INT NOT NULL PRIMARY KEY, /* ID услуги*/
+    `OrderType` VARCHAR(5) NOT NULL, /*тип услуги*/
+    `StartTime` DATETIME(5) NOT NULL, /*время начала предоставления услуги*/
+    `FinishTimePredicted` DATETIME(5) NOT NULL, /* расчетное время завершение предоставления услуги*/
+    `FinishTimeReal` DATETIME(5) NOT NULL, /* реальное время завершение предоставления услуги*/
+    `Place` FLOAT(10, 6) NOT NULL, /* Место нахождение*/
+    `Price` INT (5) NOT NULL, /* цена за услугу */
+    `Rating` INT(5) NOT NULL, /*рейтинг */
+    `ProviderID` INT(5) NOT NULL, /*тот кто предоставляет услугу "берем id"*/ 
+    `ReceiverID` INT(5) NOT NULL, /*тот кто заказал услугу "берем id" */ 
+    `ClientID` INT(5) NOT NULL /*тот кто получил услугу "берем id" */ 
+);
+
+CREATE TABLE `Sharix.OrdersType`
+(
+    `OrdersTypeID` INT NOT NULL PRIMARY KEY, /* ID типа услуги*/
+    `OrderType` VARCHAR(5) NOT NULL, /*тип услуги*/
+    `ProviderTypeID` INT(5) NOT NULL, /* какого типа поставщики услуг могут оказывать данный тип услуг*/ 
+    `ResourcesTypeID` INT(5) NOT NULL /* ID типа ресурса */ 
+);
+
+CREATE TABLE `Sharix.ResourceType` 
+(
+    `ResourceTypeID` INT NOT NULL PRIMARY KEY, /*ID типа ресурса*/
+    `ResourceTypeName` VARCHAR(30) NOT NULL /*название типа ресурса*/
+);
+
+CREATE TABLE `Sharix.Resources` 
+(
+    `ResourceID` INT NOT NULL PRIMARY KEY, /*ID ресурса*/
+    `ResourceTypeID` INT(5) NOT NULL, /* ID типа ресурса */
+    `ResourceName` VARCHAR(30) NOT NULL, /*название ресурса*/
+    `ProviderID` INT(5) NOT NULL, /* ID пользователя у которого находится ресурс*/
+    `ClientID` INT(5) NOT NULL /* ID пользователя которому необходим ресурс "*/
 );
 
