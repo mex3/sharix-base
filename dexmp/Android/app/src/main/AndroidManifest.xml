@@ -16,6 +16,8 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
+        android:minSdkVersion="15"
+        android:targetSdkVersion="22"
         android:theme="@style/AppTheme">
 
         <meta-data

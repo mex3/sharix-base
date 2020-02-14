@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "434985320212",
+    "firebase_url": "https://librari-v01.firebaseio.com",
+    "project_id": "librari-v01",
+    "storage_bucket": "librari-v01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434985320212:android:bc5364a008af4b56e70c01",
+        "android_client_info": {
+          "package_name": "com.example.library1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434985320212-0jluk424070jibcu83lkkknr2sibdda0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.library1",
+            "certificate_hash": "b70c115345099fc7f62b1f5fdbbea244288286fa"
+          }
+        },
+        {
+          "client_id": "434985320212-kcir9ug81qjh2cjn7tl60hmtqt9qvnia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD89C4gjFt7MvHXNQGXTBJxaEuBQJhYT0A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "434985320212-kcir9ug81qjh2cjn7tl60hmtqt9qvnia.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

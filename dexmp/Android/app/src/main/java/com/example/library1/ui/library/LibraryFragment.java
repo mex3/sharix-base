@@ -57,10 +57,13 @@ public class LibraryFragment extends Fragment {
             }
         });
         exampleList = new ArrayList<>();
-        exampleList.add(new ExampleItem(R.drawable.lib_img, "Библиотека " + 1, "10:00 - 21:00", "пр-кт Ленина, д 26, кв 58"));
-        for (int i = 2; i < 7; i++) {
-            exampleList.add(new ExampleItem(R.drawable.logo, "Библиотека " + i, "8:00 - 19:00", "ул Сталеваров, д 6, кв 61"));
-        }
+        exampleList.add(new ExampleItem(R.drawable.ic_books_24dp, "1", "10:00 - 21:00", "пр-кт Ленина, д 26, кв 58"));
+        exampleList.add(new ExampleItem(R.drawable.ic_books_24dp, "2", "8:00 - 19:00", "ул Сталеваров, д 6, кв 61"));
+        exampleList.add(new ExampleItem(R.drawable.ic_books_24dp, "3", "8:00 - 19:00", "ул Сталеваров, д 6, кв 61"));
+        exampleList.add(new ExampleItem(R.drawable.ic_books_24dp, "3", "8:00 - 19:00", "ул Сталеваров, д 6, кв 61"));
+        exampleList.add(new ExampleItem(R.drawable.ic_books_24dp, "3", "8:00 - 19:00", "ул Сталеваров, д 6, кв 61"));
+        exampleList.add(new ExampleItem(R.drawable.ic_books_24dp, "3", "8:00 - 19:00", "ул Сталеваров, д 6, кв 61"));
+
 
         mRecyclerView = root.findViewById(R.id.recyclerView);
         mRecyclerView.setHasFixedSize(true);
